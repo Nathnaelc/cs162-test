@@ -26,5 +26,5 @@ A PR is meaningful, if it:
     forms, including: 
     - Simple wireframes for designers
     - Documentation of significant managerial direction
-    If you plan on submitting anything different then it is worthile checking 
+    If you plan on submitting anything different then it is worthwhile checking 
     with your professor if it is suitable.  
