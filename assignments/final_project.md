@@ -60,20 +60,36 @@ request should have been successfully reviewed by at least one other member of
 your team. There should be sufficient description in the pull request 
 for the professor to  clearly understand the feature is that is being
 added.
-2. Links to pull requests you have reviewed. A good review will ccontain
-lots of constructive criticism. It will show 
+2. Links to pull requests you have reviewed. A good review will contain
+lots of constructive criticism, or feedback showing a deep understanding of the
+pull request.
 
 ### FAQ:
-1. *I specialized in a non-coding role, what do I submit?* In this case, please
-submit detailed information clearly highlighting the work you produced, and how 
-it helped advance the project. Please note that it is still expected that you
-will review other students' pull requests.
+1. *I specialized in a non-coding role, what do I submit?* 
+In this case, please submit detailed information clearly highlighting the work 
+you produced, and how it helped advance the project. Please note that it is 
+still expected that you will review other students' pull requests.
 
-2. *Help! No-one else on my team wants to work!* In this case, you are 
-encouraged to let the professor know. The professor is likely to arrange a group check in
-during class, and interrogate all students on the progress made individually over
-the past two weeks. This is usually very helpful in terms of getting the project
-going. (This occurs several times naturally during the semester anyway.)
+2. *Help! No-one else on my team wants to work!* 
+In this case, you are encouraged to let the professor know. The professor is 
+likely to arrange a group check in during class, and interrogate all students 
+on the progress made individually over the past two weeks. This is usually 
+very helpful in terms of getting the project going. (This occurs several times 
+naturally during the semester anyway.)
+
+3. *Should I explain the pull requests in the pdf I submit?*
+Please don't! A good pull request will have a sufficiently detailed explanation
+that anyone should be able to read it and understand the feature being implemented
+(or the bug being fixed)! Use the time you've saved to build a better website!
+
+4. *How will specialized roles be graded?*
+This is a great question! Most academic assignments require you to do everything
+yourself, which guarantees some sort of consistency. In this case however there
+are specialized roles, and sticking strictly to the grading rubric might give a student
+scores in only a single LO. Instead the scores will be distributed across several of
+the most relevant LOs, even if they do not strictly apply. This is the best way to
+ensure consistency of the weight of the final project for all students. This is the
+approach taken even for students in unspecialized roles who show a slight preference.
 
 ## Focused Outcomes Added
 
