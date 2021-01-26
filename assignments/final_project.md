@@ -1,14 +1,26 @@
 # Final project:
 ## Description
 
-The final project for CS162 will consist of the entire section implementing a
-project chosen from the suggestions given in assignment 1. Your instructor will
-provide more specific details of the project.
+The final project for CS162 will consist of groups of roughly 6 students 
+implementing a project chosen from the suggestions given in assignment 1. 
+There will be a matching process to ensure that most students will be working
+on a project they are interested in.
 
-A section consisting of 15+ students is far too big a team to successfully
-manage so the final project must be decomposable into several smaller systems
-with students being able to form groups and work on the the smaller systems
-somewhat independently.
+Within the team, students are encouraged to specialize where appropriate. 
+There are lots of options which may be appropriate to your particular project.
+Lots of students tend to favor either frontend or backend programming, so
+it might make sense to try and form subteams which focus on those aspects. 
+If the database requires a lot of complex queries then consider assigning 
+one person to focus entirely on writing those queries. Some students are 
+great at design, and it is worthwhile giving total design freedom!
+
+There will also need to be a single managerial position within each team.
+The main responsibility of this position will be to attend an occasional 
+meetings with the professor and to report or progress / roadblocks. The 
+person chosen will usually be the same person who suggested the project,
+but this is not a necessity. It is worth pointing out that the managerial
+position is not a fulltime position, and coding is still expected, on top
+of attending meetings.
 
 The final project is introduced early in the course, and students are encouraged
 to start working early as well. It is possible (and even encouraged) that you
@@ -20,16 +32,12 @@ Everything will be managed from a github repo, and this will allow the tracking
 of individual contributions to the project.
 A significant portion of your grade (25% - 40%) will also depend on whether or
 not there was successful collaboration within the project which led to a useful
-product. So if there are issues that fall awkwardly between two teams then it is
-in the interests of both teams to get the issue fixed!
+product. So if there are issues that affect the whole project, but no-one wants 
+to fix, then it is in the interests of the whole team to get the issue fixed!
 
-There is also scope for specialized positions within the project. For example,
-someone may nominate themselves as a project manager (subject to the approval of
-the rest of the section). The project manager would ensure that all teams are
-making progress and coordinate the implementation of any features which span
-multiple teams. Depending on the project, it might make sense for specialized QA
-positions as well, but this should be discussed on a case-by-case basis with
-your instructor.
+It is possible for a student to specialize in something which does not produce
+lots of code (for example design work). In this case, the student must track
+their own progress, and be prepared to explain the work that they have done.
 
 ### Arbitration:
 Group work can have many failure modes, and the probability of these failure
@@ -44,19 +52,40 @@ instructor will be able to approve the transferral of work away from obstructive
 students which will result in that student receiving a lower grade.
 
 ### Submission:
-Please submit a pdf containing URLs for several pull requests that you have
-authored for this project. Each pull request should be a complete feature, with
-docstrings and tests. Extensive documentation is also permissible as a gradable
-pull request. Each pull request should have been successfully reviewed by at
-least one other member of your team. There should be sufficient description in
-the pull request comments for one to understand the feature is that is being
+Please submit a pdf containing two sections:
+1. Links to pull requests you have authored. Ideally each pull request
+should be a complete feature, with docstrings and tests. Extensive 
+documentation is also permissible as a gradable pull request. Each pull 
+request should have been successfully reviewed by at least one other member of
+your team. There should be sufficient description in the pull request 
+for the professor to  clearly understand the feature is that is being
 added.
+2. Links to pull requests you have reviewed. A good review will ccontain
+lots of constructive criticism. It will show 
+
+### FAQ:
+1. *I specialized in a non-coding role, what do I submit?* In this case, please
+submit detailed information clearly highlighting the work you produced, and how 
+it helped advance the project. Please note that it is still expected that you
+will review other students' pull requests.
+
+2. *Help! No-one else on my team wants to work!* In this case, you are 
+encouraged to let the professor know. The professor is likely to arrange a group check in
+during class, and interrogate all students on the progress made individually over
+the past two weeks. This is usually very helpful in terms of getting the project
+going. (This occurs several times naturally during the semester anyway.)
 
 ## Focused Outcomes Added
 
-- **#algorithms**: Apply algorithmic thinking strategies to solve problems and effectively implement working code. (C) FA
-- **#breakitdown**: Organize problems into tractable components and design solutions. (H) EA
-- **#cs162-communication**: Ensure that all code, documentation and commit messages are clearly written with explanations where appropriate.
-- **#cs162-abstraction**: Design interfaces (class interfaces, user interfaces, etc.) that are easy to use and hide much of the complexity needed for the implementation.
-- **#cs162-separationofconcerns**: Design systems such that any task is handled by exactly one component and each component handles conceptually similar tasks.
+- **#algorithms**: Apply algorithmic thinking strategies to solve problems and 
+effectively implement working code. (C) FA
+- **#breakitdown**: Organize problems into tractable components and design 
+solutions. (H) EA
+- **#cs162-communication**: Ensure that all code, documentation and commit 
+messages are clearly written with explanations where appropriate.
+- **#cs162-abstraction**: Design interfaces (class interfaces, user interfaces, 
+etc.) that are easy to use and hide much of the complexity needed for the 
+implementation.
+- **#cs162-separationofconcerns**: Design systems such that any task is handled by 
+exactly one component and each component handles conceptually similar tasks.
 - **#cs162-testing**: Write comprehensive and meaningful testing code for the system.
