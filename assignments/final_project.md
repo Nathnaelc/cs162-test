@@ -53,13 +53,13 @@ students which will result in that student receiving a lower grade.
 
 ### Submission:
 Please submit a pdf containing two sections:
-1. Links to pull requests you have authored. Ideally each pull request
-should be a complete feature, with docstrings and tests. Extensive 
+1. Links to pull requests you have authored. Each pull request
+should be self-contained, ie. it should be possible to completely understand 
+the pull request by only reading the pull request. Ideally this PR will have
+docstrings and tests, but this is not necessarily applicable in all instances. Extensive 
 documentation is also permissible as a gradable pull request. Each pull 
-request should have been successfully reviewed by at least one other member of
-your team. There should be sufficient description in the pull request 
-for the professor to  clearly understand the feature is that is being
-added.
+request *must* have been successfully reviewed by at least one other member of
+your team.
 2. Links to pull requests you have reviewed. A good review will contain
 lots of constructive criticism, or feedback showing a deep understanding of the
 pull request.
