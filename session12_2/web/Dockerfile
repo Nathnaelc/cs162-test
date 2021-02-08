@@ -1,5 +1,5 @@
-FROM python:3.6-alpine3.10
-MAINTAINER Philip Sterne "psterne@minerva.kgi.edu"
+FROM python:3.9.1-alpine3.13
+LABEL maintainer="psterne@minerva.kgi.edu"
 
 COPY requirements.txt .
 
