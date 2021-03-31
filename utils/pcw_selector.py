@@ -44,7 +44,7 @@ class Terminal(BaseMethod):
     def user_input_output(self):
         self.user_email = input("Please enter your student email address: ")
         while "@minerva.kgi.edu" not in self.user_email:
-            print("Oops, I don't think that's a Minervan email address, would you mind checking you typed it write? You wrote {}.".format(self.user_email))
+            print("Oops, I don't think that's a Minervan email address, would you mind checking you typed it right? You wrote {}.".format(self.user_email))
             self.user_email = input("Please enter your student email address: ")
 
         self.sessions_key = input("What session is this for (sessions supported: {}): ".format(", ".join([*self.sessions])))

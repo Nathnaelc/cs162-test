@@ -71,7 +71,7 @@ to the board.
 
 ### 2. Pokemon
 
-Here is an example link to return Pokemon data in JSON format (https://pokeapi.co/api/v2/pokemon/charmeleon). You can see the documentation of Pokemon API at https://pokeapi.co/docs/v2.html.
+Here is an example link to return Pokemon data in JSON format (https://pokeapi.co/api/v2/pokemon/charmeleon). You can see the documentation of Pokemon API at https://pokeapi.co/docs/v2.
 
 Choose your favorite Pokemon, and write a short Python program which queries the Pokemon API and then prints its base statistics (Attack, Defense, HP, Sp. Atk, Sp. Def, Speed)
 in plain text:
