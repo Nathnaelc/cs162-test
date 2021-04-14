@@ -17,7 +17,10 @@ You are also encouraged to explore the code contained in the `basic_auth`
 directory, and you can run the server using the following commands:
 ```bash
 python3 -m venv venv
+# for macOS
 source venv/bin/activate
+# for Windows
+venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 export FLASK_APP=basic_auth
 flask run
