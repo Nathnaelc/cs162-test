@@ -47,7 +47,10 @@ relevant parts of your code:
 
 ```python3
 python3.6 -m venv venv
+# for macOS
 source venv/bin/activate
+# for Windows
+venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 python3 create.py
 python3 insert_data.py
