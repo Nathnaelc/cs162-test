@@ -36,9 +36,18 @@ As part of your submission you must include a zip file with all the necessary
 code and html, a requirements.txt file, and a `README.md` file. To get your
 application to run should only require the following steps:
 
+#### macOS
 ```python3
 python3.6 -m venv venv
 source venv/bin/activate
+pip3 install -r requirements.txt
+python3 app.py
+```
+
+#### Windows
+```python3
+python3.6 -m venv venv
+venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 python3 app.py
 ```
