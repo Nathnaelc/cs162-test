@@ -4,12 +4,12 @@ import argparse
 
 class BaseMethod:
     def __init__(self):
-        self.sessions = {'3.2': ['2 - Logging',
-                                 '3 - Graphics'],
-                         '6.2': ['2 - Pokemon',
-                                 '3 - Crypto Exchange', 
-                                 '4 - What3words',
-                                 '5 - Flying Aircraft']}
+        self.sessions = {'6': ['2 - Logging',
+                               '3 - Graphics'],
+                         '11': ['2 - Pokemon',
+                                '3 - Crypto Exchange', 
+                                '4 - What3words',
+                                '5 - Flying Aircraft']}
         self.user_email = ''
         self.sessions_key = ''
 
