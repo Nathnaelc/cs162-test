@@ -45,9 +45,19 @@ the requirements of this assignment.
 In a `README.md` file you must include a series of commands to execute all the
 relevant parts of your code:
 
-```python3
+These are the recommended commands for macOS:
+```bash
 python3.6 -m venv venv
 source venv/bin/activate
+pip3 install -r requirements.txt
+python3 create.py
+python3 insert_data.py
+python3 query_data.py
+```
+Recommended commands for Windows:
+```cmd
+python3.6 -m venv venv
+venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 python3 create.py
 python3 insert_data.py
