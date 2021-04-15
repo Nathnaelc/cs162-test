@@ -55,7 +55,7 @@ python3 insert_data.py
 python3 query_data.py
 ```
 Recommended commands for Windows:
-```bash
+```cmd
 python3.6 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
