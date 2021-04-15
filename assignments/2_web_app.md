@@ -41,7 +41,7 @@ application to run should only require the following steps:
 python3.6 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-python3 app.py
+python3.6 app.py
 ```
 
 #### Windows
@@ -49,7 +49,7 @@ python3 app.py
 python3.6 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
-python3 app.py
+python3.6 app.py
 ```
 
 Please make sure that the virtual environment `venv` is **not** included in 
@@ -61,7 +61,7 @@ The project must also include appropriate unit tests. These unit tests should be
 run using the following command (while in the project’s root directory):
 
 ```python3
-python3 -m unittest discover test
+python3.6 -m unittest discover test
 ```
 
 ## Alternative Assignment
