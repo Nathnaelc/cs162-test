@@ -29,7 +29,7 @@ in Windows:
 python3 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
-export FLASK_APP=basic_auth
+set FLASK_APP=basic_auth
 flask run
 ```
 Now vist `http://127.0.0.1:5000/`.
