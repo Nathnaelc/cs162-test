@@ -14,12 +14,19 @@ A good introduction to basic authentication can be found at:
 https://www.httpwatch.com/httpgallery/authentication/
 
 You are also encouraged to explore the code contained in the `basic_auth`
-directory, and you can run the server using the following commands:
+directory, and you can run the server using the following commands.
+
+In macOS:
 ```bash
 python3 -m venv venv
-# for macOS
 source venv/bin/activate
-# for Windows
+pip3 install -r requirements.txt
+export FLASK_APP=basic_auth
+flask run
+```
+in Windows:
+```cmd
+python3 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 export FLASK_APP=basic_auth
