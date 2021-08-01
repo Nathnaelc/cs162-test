@@ -7,7 +7,7 @@ focuses on finding suitable projects for you and your fellow students to tackle.
 Eric Ries defines a startup as “a human institution designed to deliver a new
 product or service under conditions of extreme uncertainty”. This suggests that
 whenever we have an initial idea we should focus on reducing the uncertainty
-surrounding that idea. To that end, you need propose and verify an idea without
+surrounding that idea. To that end, you need to propose and verify an idea without
 writing any code.
 
 Your suggested project needs to satisfy the following constraints:
