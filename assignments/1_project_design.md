@@ -16,9 +16,9 @@ Your suggested project needs to satisfy the following constraints:
  - The project must be solvable using code. (Ideally the code will be in Python, and will take the form of a webservice, but those are not absolute requirements.)
 
 This assignment requires a clear description of:
-    - the problem that needs solving
-    - who will benefit from this project (the “customer”, though it need not be commercial)
-    - the short experiment that you’ve already carried out in order to validate that your proposed customer does in fact need this problem solved (**no code need be written for this assignment**).
+ - the problem that needs solving
+ - who will benefit from this project (the “customer”, though it need not be commercial)
+ - the short experiment that you’ve already carried out in order to validate that your proposed customer does in fact need this problem solved (**no code need be written for this assignment**).
 
 You need to hand in a short pdf report (aim for around 1000 words) in which you make as strong a case as possible for your project being the most worthwhile for this class to pursue.
 
