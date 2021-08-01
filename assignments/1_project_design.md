@@ -11,7 +11,7 @@ surrounding that idea. To that end, you need propose and verify an idea without
 writing any code.
 
 Your suggested project needs to satisfy the following constraints:
- - The project needs to be achievable (can 10-15 programmers working part-time build it in 15 weeks?)
+ - The project needs to be achievable (can 4-6 programmers working part-time build it in 15 weeks?)
  - The project needs to solve a concrete need, and this need has been validated through a short experiment which you've carried out.
  - The project must be solvable using code. (Ideally the code will be in Python, and will take the form of a webservice, but those are not absolute requirements.)
 
