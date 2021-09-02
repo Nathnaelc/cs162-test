@@ -53,16 +53,19 @@ students which will result in that student receiving a lower grade.
 
 ### Submission:
 Please submit a pdf containing two sections:
-1. Links to pull requests you have authored. Each pull request
-should be self-contained, ie. it should be possible to completely understand 
-the pull request by only reading the pull request. Ideally this PR will have
-docstrings and tests, but this is not necessarily applicable in all instances. Extensive 
-documentation is also permissible as a gradable pull request. Each pull 
-request *must* have been successfully reviewed by at least one other member of
-your team.
-2. Links to pull requests you have reviewed. A good review will contain
+1. Links to meaningful pull requests you have authored. Extensive 
+documentation is also permissible as a gradable pull request.
+2. Links to meaningful pull requests you have reviewed. A good review will contain
 lots of constructive criticism, or feedback showing a deep understanding of the
-pull request.
+pull request. Your comments must have been addressed by the author.
+
+A PR is meaningful, if it:
+ - implements any small part of the project
+ - has a clear description of the feature (inside the pull request)
+ - has docstrongs and/or tests (where applicable)
+ - is self-contained (ie. it should be possible to completely understand the PR by reading only the PR)
+ - has been reviewed and approved by a team member
+ - has been successfully merged into the master branch
 
 ### FAQ:
 1. *I specialized in a non-coding role, what do I submit?* 
@@ -89,7 +92,8 @@ are specialized roles, and sticking strictly to the grading rubric might give a 
 scores in only a single LO. Instead the scores will be distributed across several of
 the most relevant LOs, even if they do not strictly apply. This is the best way to
 ensure consistency of the weight of the final project for all students. This is the
-approach taken even for students in unspecialized roles who show a slight preference.
+approach taken even for students in unspecialized roles who show a slight preference 
+for a specific aspect of the project.
 
 ## Focused Outcomes Added
 

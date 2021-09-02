@@ -13,6 +13,8 @@ You must submit a pdf containing links to:
 A PR is meaningful, if it:
  - implements any small part of the project
  - has a clear description of the feature (inside the pull request)
+ - has docstrongs and/or tests (where applicable)
+ - is self-contained (ie. it should be possible to completely understand the PR by reading only the PR)
  - has been reviewed and approved by a team member
  - has been successfully merged into the master branch
 
