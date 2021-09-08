@@ -114,6 +114,49 @@ Program the following:
 2. Build a random number generator based on the Mersenne twister code that hides as much implementation detail as possible and only exposes the needed functionality.
 3. Refactor your blackjack code so that it uses one of the new random number generator classes and it is easy to swap between either class.
 
+_HINT 1_: Since the goal is to swap between two random classes easily, this is what we want to have from blackjack code:
+
+```python
+from random import Mersenne, RANDU
+rand = RANDU(seed)
+
+class CardDeck():
+  ...
+  def pop_rand(self):
+    ind = rand.sample()
+```
+From this code, we can change the random method by changing initiation of ```rand``` to ```rand = Mersenne(seed)```. How can you design ```Mersenne``` class and ```RANDU``` class to achieve our goal?
+
+_HINT 2_: Example for ```Mersenne``` class and ```RANDU``` class implementation
+
+```python
+# Class design
+class Mersenne:
+  def __init__(self, seed=None):
+    if seed is None:
+      self.seed = ...
+    else:
+      self.seed = seed
+    self._initalize()
+  def _initalize(self):
+    ...
+  def _generate_numbers(self)
+    ...
+  def sample(self):
+    ...
+
+class RANDU:
+  def __init__(self, seed=None, c=65539, m=2147483648):
+    self.c = c
+    self.m = m
+    if seed is None:
+      ...
+    else:
+      ...
+  def sample(self):
+    ...
+```
+
 ### 5. (Optional) Implement more Blackjack rules
 
 Find out what the full set of rules are for blackjack.  There are many subtleties that have been left out of the current implementation.  Find one such subtlety and implement it in the refactored codebase.  If you have done a good job of design then adding a new rule should affect a small number of locations in the codebase.  Think about how it would have been implemented in the old design, and whether this is an improvement or not.
