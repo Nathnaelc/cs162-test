@@ -6,7 +6,14 @@ Currently, the topic that needs documentation the most is for the initial setup.
 
 Some of these directories will not align with the most recent version of the syllabus.  In all such cases the syllabus should be viewed as the authoritative source of information and you are encouraged to inform your instructor of the discrepancy.
 
+## Fall 2021 support channels:
+- Join discord using these [instructions](https://docs.google.com/document/d/1XL6PUEGJCiU-ekFPPFKgOfsp0Op2LACFyeaL-_UT6MA/edit?usp=sharing).
+- Sign up for Minh's office hours using this [link](https://calendly.com/minh-nguyen-oh/cs162)
+- Sign up for Prof Sterne's office hours using this [link](https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUFVNEo3TG1xaktPfGRlZmF1bHR8YjY5ZjlmNTdmZjIxZWJiMDlhYmJkY2M4MTA5ZTlmNDA)
 
+Remember that you are encouraged to help each other as well! 
+
+(The line between collaboration and plagiarism can be blurry sometimes. Here is a rough rule of thumb to help. If you are using a line of code that you got from someone else, and *you don't know how it works* then that's probably plagiarism. If you've copy-pasted something from the internet, eg stackoverflow, then it would be a good idea to also provide the URL. If you're pasting more than 10 lines of code from another student then it's probably plagiarism, regardless of how well you understand the code. This means that if someone has a small clever function, then you can totally use it too, provided you understand it completely. When in doubt cite your sources!)
 
 ## Editors:
 It is strongly recommended that you use one of the following editors:
