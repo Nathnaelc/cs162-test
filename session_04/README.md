@@ -5,6 +5,10 @@ To set up a suitable environment for this session's code:
 ```bash
 $ PYTHONENCODING=utf-8 python3 blackjack.py
 ```
+For Windows (python3 -> python, from here on out):
+```bash
+$ PYTHONENCODING=utf-8 python3 blackjack.py
+```
 And you should be able to play a simplified form of blackjack.
 
 ### 2. Read `blackjack.py` and identify its structure
@@ -51,6 +55,10 @@ Complete the following steps to add support for your language:
 A quick way to findout the python3 folder you are using (Mac)
 ```bash
 which python3
+```
+For Windows
+```bash
+where python
 ```
 
 2. Run the following command: (Assuming pygettext.py is in the same folder)
