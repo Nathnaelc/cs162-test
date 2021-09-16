@@ -60,26 +60,60 @@ For Windows
 ```bash
 where python
 ```
+2. You have to make sure you are in the right working directory (..\Tools\i18n):
+- For a guide on changing directories (Windows) refer to here: https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/ 
+- For mac here: https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html
+- On windows, you must use open command prompt as an administrator: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/ 
 
-2. Run the following command: (Assuming pygettext.py is in the same folder)
+#### FOR WINDOWS: 
+
+3. Copy blackjack.py into ...Tool\il8n
+
+4. Run the following command: (pygettext.py should be in the same folder)
+```bash
+> pygettext.py -d blackjack blackjack.py
+```
+
+5. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
+- Upload your new .pot file from ...Tools\i18n\blackjack.pot
+- Choose the new language you want to use. Standardized Script-Language codes are here: https://www.softaculous.com/docs/admin/scripts-language-codes/ 
+- You can either translate by manually typing into "translation" or use their auto-generated translations on right panel
+
+6. In pcw directory (under session_04\locale) create a new folder: <YOUR_CODE>\LC_MESSAGES
+
+7. Save translation in PoEdit to this new sub-sub directory
+- Your sub-directories should be formatted exactly the same as for zh_CN\LC_MESSAGES
+
+8. This will create a .mo and .po file. Whatever you do DO NOT EDIT THEM DIRECTLY
+- Rename the .mo file to "blackjack.mo"
+
+9. In Bash terminal run:
+```bash
+$ LANG=<your_new_language_code> PYTHONENCODING=utf-8 python blackjack.py
+```
+
+10. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired
+
+#### FOR MAC(?)
+3. Run the following command: (Assuming pygettext.py is in the same folder)
 ```bash
 $ python3 pygettext.py -o gettext.po blackjack.py
 ```
 
-3. Open gettext.pot. Translate each sentence after msgid and fill the empty string after mgsstr. If you don't know the language well, use google translate to help you.
+4. Open gettext.pot. Translate each sentence after msgid and fill the empty string after mgsstr. If you don't know the language well, use google translate to help you.
 
-4. Run the following command: (Assuming msgfmt.py is in the same folder)
+5. Run the following command: (Assuming msgfmt.py is in the same folder)
 ```bash
 $ python3 msgfmt.py -o blackjack.mo gettext.po
 ```
 
-5. Move blackjack.mo into /locale/Your_Language_Code/LC_MESSAGES/. Run:
+6. Move blackjack.mo into /locale/Your_Language_Code/LC_MESSAGES/. Run:
 ```bash
 $ LANG=Your_Language_Code PYTHONENCODING=utf-8 python3 blackjack.py
 ```
 Replace Your_Language_Code above with your language code.
 
-6. Enjoy!
+7. Enjoy!
 
 Think about the following question:
 1. Did you write any code?
@@ -118,9 +152,10 @@ Identify the following:
 2. If we are using a random number generator, what functionality do we actually care about?
 
 Program the following:
-1. Build a random number based on the RANDU implementation code that hides as much implementation detail as possible and only exposes the needed functionality.
-2. Build a random number generator based on the Mersenne twister code that hides as much implementation detail as possible and only exposes the needed functionality.
-3. Refactor your blackjack code so that it uses one of the new random number generator classes and it is easy to swap between either class.
+1. Build a random number generator function based on the RANDU implementation code with minimal comments
+2. Build a random number generator function based on the Mersenne twister code with minimal comments
+3. Refactor your blackjack code. Create a new random number generator class that can switch easily switch between either number-generating function
+4. Implement this class throughout code
 
 _HINT 1_: Since the goal is to swap between two random classes easily, this is what we want to have from blackjack code:
 
