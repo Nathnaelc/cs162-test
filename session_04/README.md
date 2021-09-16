@@ -3,11 +3,11 @@
 ### 1. Get started
 To set up a suitable environment for this session's code:
 ```bash
-$ PYTHONENCODING=utf-8 python3 blackjack.py
+$ python3 blackjack.py
 ```
 For Windows (python3 -> python, from here on out):
 ```bash
-$ PYTHONENCODING=utf-8 python blackjack.py
+$ python blackjack.py
 ```
 And you should be able to play a simplified form of blackjack.
 
@@ -30,7 +30,7 @@ Phew! That was quite a long aside.  Let's get back to today's task of getting a 
 
 Run the following code in bash:
 ```bash
-$ LANG=zh_CN PYTHONENCODING=utf-8 python3 blackjack.py
+$ LANG=zh_CN python3 blackjack.py
 ```
 And the blackjack program is in Chinese.
 
@@ -83,24 +83,30 @@ To read more about symbolic links see here (you will likely work with them in fu
 ```
 
 5. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
-- Upload your new .pot file from ...Tools\i18n\blackjack.pot
+- Open your new .pot file from ...Tools\i18n\blackjack.pot
 - Choose the new language you want to use. Standardized Script-Language codes are here: https://www.softaculous.com/docs/admin/scripts-language-codes/ 
 - You can either translate by manually typing into "translation" or use their auto-generated translations on right panel
 
 6. In pcw directory (under session_04\locale) create a new folder: <YOUR_LANGUAGE_CODE>\LC_MESSAGES
 
-7. Save translation in PoEdit to this new sub-sub directory
+7. Save translation in PoEdit to this new sub-sub directory as "blackjack"
+- PoEdit will handle the extensions
+- This will create a .mo and .po file. Whatever you do DO NOT EDIT THEM DIRECTLY
+- You can also just save as is, and then manually change the name of the .mo file to "blackjack.mo"
 - Your sub-directories should be formatted exactly the same as for zh_CN\LC_MESSAGES
 
-8. This will create a .mo and .po file. Whatever you do DO NOT EDIT THEM DIRECTLY
-- Rename the .mo file to "blackjack.mo"
+8. In Bash terminal run:
 
-9. In Bash terminal run:
+Windows:
 ```bash
-$ LANG=<your_new_language_code> PYTHONENCODING=utf-8 python blackjack.py
+$ LANG=<your_new_language_code> python blackjack.py
+```
+Mac:
+```bash
+$ LANG=<your_new_language_code> python3 blackjack.py
 ```
 
-10. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired!
+9. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired!
 
 Think about the following question:
 1. Did you write any code?
