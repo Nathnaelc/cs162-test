@@ -1,9 +1,21 @@
 # Session 2.2
 
+> In this pre class work, you will be performing two tasks: 
+> 
+> 1. Add a new language support into a existing game (see part 3) 
+> 2. Implement random number generators (see part 4)
+> 
+> Be sure you read through the prompt carefully and understand the expected outcome.
 ### 1. Get started
-To set up a suitable environment for this session's code:
+To set up a suitable [environment variable](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) for this session's code:
+
+**Windows**
 ```bash
-$ PYTHONENCODING=utf-8 python3 blackjack.py
+$ set PYTHONENCODING='utf-8 python3 blackjack.py'
+```
+**MacOS**
+```bash
+$ export PYTHONENCODING='utf-8 python3 blackjack.py'
 ```
 And you should be able to play a simplified form of blackjack.
 
@@ -48,28 +60,39 @@ External Web resources could be found [here](https://inventwithpython.com/blog/2
 Complete the following steps to add support for your language:
 1. Locate the position for pygettext.py and msgfmt.py. For Mac, they are located in your Python3 folder, in examples/Tools/i18n/; For Windows, they are in \Tools\i18n.
 
-A quick way to findout the python3 folder you are using (Mac)
-```bash
-which python3
-```
+    <details>
+    <summary>How to find File Location on <b>Mac</b> (click to expand)</summary>
+
+    You can do this in either way below:
+
+    (1) Using the following command to find python3 folder location:
+      
+      ```bash
+      $ which python3
+      ```
+
+    (2) Use GUI tricks: Drag the finder file to your terminal, then copy paste the path 
+    ![file-location-trick-for-mac](https://media.giphy.com/media/Ud3ljJftswha4M6a7C/giphy.gif)
+
+    </details>
 
 2. Run the following command: (Assuming pygettext.py is in the same folder)
 ```bash
 $ python3 pygettext.py -o gettext.po blackjack.py
 ```
 
-3. Open gettext.pot. Translate each sentence after msgid and fill the empty string after mgsstr. If you don't know the language well, use google translate to help you.
+3. Open gettext.po. Translate each sentence after msgid and fill the empty string after mgsstr. If you don't know the language well, use google translate to help you.
 
 4. Run the following command: (Assuming msgfmt.py is in the same folder)
 ```bash
 $ python3 msgfmt.py -o blackjack.mo gettext.po
 ```
 
-5. Move blackjack.mo into /locale/Your_Language_Code/LC_MESSAGES/. Run:
+5. Move blackjack.mo into /locale/Your_Language_Code/LC_MESSAGES/. Run this, but replace Your_Language_Code above with your language code.
+
 ```bash
 $ LANG=Your_Language_Code PYTHONENCODING=utf-8 python3 blackjack.py
 ```
-Replace Your_Language_Code above with your language code.
 
 6. Enjoy!
 
