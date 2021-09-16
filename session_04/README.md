@@ -7,7 +7,7 @@ $ PYTHONENCODING=utf-8 python3 blackjack.py
 ```
 For Windows (python3 -> python, from here on out):
 ```bash
-$ PYTHONENCODING=utf-8 python3 blackjack.py
+$ PYTHONENCODING=utf-8 python blackjack.py
 ```
 And you should be able to play a simplified form of blackjack.
 
@@ -60,14 +60,22 @@ For Windows
 ```bash
 where python
 ```
-2. You have to make sure you are in the right working directory (..\Tools\i18n):
+2. You have to make sure you are in the right working directory for session_04 (..\cs162\session_04):
 - For a guide on changing directories (Windows) refer to here: https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/ 
 - For mac here: https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html
-- On windows, you must use open command prompt as an administrator: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/ 
+- On windows, you must use the command prompt as an administrator: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/ 
 
-#### FOR WINDOWS: 
-
-3. Copy blackjack.py into ...Tool\il8n
+3. Create a symbolic link to pygettext.py file
+- For windows run the following command:
+```bash
+> mklink pygettext.py "C:\<PATH TO PYTHON>\Python38\Tools\i18n\pygettext.py"
+```
+- For mac run the following command:
+```bash
+> sudo ln -s "<PATH TO SESSION 4>/cs162/session_04" "<PATH TO PYTHON3>/examples/Tools/i18n/pygettext.py"
+```
+If all goes well, you should be able to see the pygettext.py file in session_04.
+To read more about symbolic links see here (you will likely work with them in future): https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/
 
 4. Run the following command: (pygettext.py should be in the same folder)
 ```bash
@@ -79,7 +87,7 @@ where python
 - Choose the new language you want to use. Standardized Script-Language codes are here: https://www.softaculous.com/docs/admin/scripts-language-codes/ 
 - You can either translate by manually typing into "translation" or use their auto-generated translations on right panel
 
-6. In pcw directory (under session_04\locale) create a new folder: <YOUR_CODE>\LC_MESSAGES
+6. In pcw directory (under session_04\locale) create a new folder: <YOUR_LANGUAGE_CODE>\LC_MESSAGES
 
 7. Save translation in PoEdit to this new sub-sub directory
 - Your sub-directories should be formatted exactly the same as for zh_CN\LC_MESSAGES
@@ -92,28 +100,7 @@ where python
 $ LANG=<your_new_language_code> PYTHONENCODING=utf-8 python blackjack.py
 ```
 
-10. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired
-
-#### FOR MAC(?)
-3. Run the following command: (Assuming pygettext.py is in the same folder)
-```bash
-$ python3 pygettext.py -o gettext.po blackjack.py
-```
-
-4. Open gettext.pot. Translate each sentence after msgid and fill the empty string after mgsstr. If you don't know the language well, use google translate to help you.
-
-5. Run the following command: (Assuming msgfmt.py is in the same folder)
-```bash
-$ python3 msgfmt.py -o blackjack.mo gettext.po
-```
-
-6. Move blackjack.mo into /locale/Your_Language_Code/LC_MESSAGES/. Run:
-```bash
-$ LANG=Your_Language_Code PYTHONENCODING=utf-8 python3 blackjack.py
-```
-Replace Your_Language_Code above with your language code.
-
-7. Enjoy!
+10. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired!
 
 Think about the following question:
 1. Did you write any code?
