@@ -61,13 +61,14 @@ Draw a class diagram of the Logging library, including some of the logging
 handlers, filters, formatters and LogRecord classes. Does this do a better job
 of describing the library than you were able to last session?
 
-### 3. Class Project
-Using your new insight, decompose your class project into as many classes as you
+### 3. Final Project
+You should have been assigned to a final project team by now. 
+Using your new insight, decompose this project into as many classes as you
 think you will need.  Draw this proposed solution into a UML diagram, bring it
 to class and be prepared to explain your design decisions to your fellow
 students.  How well does your design separate out different concerns?
 
-*Discussing your class project question with fellow students before class is
+*Discussing your class project question with students on the same team before class is
 discouraged as we will be interested in the variety of solutions that students
 obtained in class.*
 
