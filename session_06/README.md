@@ -8,24 +8,25 @@ answered by everyone, but only one of questions 2 and 3 need to be answered.
 Find out which question to answer by running
 the following:
 
-Terminal
+Terminal (mac. Windows use <python>)
 ```bash
 python3 utils/pcw_selector.py Terminal
 ```
+or
 
 TKinter
 ```bash
 python3 utils/pcw_selector.py TKinter
 ```
 
-Once you've entered your email address, you will find out whether to answer
+Once you've entered your email address and session (6), you will find out whether to answer
 question 2 or question 3 for this seminar.
 
 ### 1. A base object
 Python provides certain functionality to all classes.
 
 
-At the REPL, typing `type(x)` will show what type of variable `x` is, while `dir(x)` will reveal all the methods that x has.  Investigate the default behavior t.  Examine the behavior that python gives a using the following few lines of code:
+At the REPL, typing `type(x)` will show what type of variable `x` is, while `dir(x)` will reveal all the methods that x has.  Investigate the default behavior of t.  Examine the behavior that python gives using the following few lines of code:
 
 ```python
 class BlankClass(object):

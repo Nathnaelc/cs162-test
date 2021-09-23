@@ -42,8 +42,8 @@ class Terminal(BaseMethod):
         super().__init__()
 
     def user_input_output(self):
-        self.user_email = input("Please enter your student email address: ")
-        while "@minerva.kgi.edu" not in self.user_email:
+        self.user_email = input("Please enter your student email address (eg. XXXXX@uni.minerva.edu): ")
+        while "@uni.minerva.edu" not in self.user_email:
             print("Oops, I don't think that's a Minervan email address, would you mind checking you typed it right? You wrote {}.".format(self.user_email))
             self.user_email = input("Please enter your student email address: ")
 
@@ -60,7 +60,7 @@ class TKinter(BaseMethod):
 
     def user_input_output(self):
         top = Toplevel(self.root)
-        label_user_email = Label(top, text="Please enter your student email address:")
+        label_user_email = Label(top, text="Please enter your student email address (eg. XXXXX@uni.minerva.edu):")
         label_user_email.pack()
         entry_user_email = Entry(top)
         entry_user_email.pack()
@@ -72,11 +72,11 @@ class TKinter(BaseMethod):
         def checker():
             self.user_email = entry_user_email.get()
             self.sessions_key = entry_sessions_key.get()
-            if "@minerva.kgi.edu" in self.user_email and self.sessions_key in [*self.sessions]:
+            if "@uni.minerva.edu" in self.user_email and self.sessions_key in [*self.sessions]:
                 top.destroy()
                 display_selection()
             else:
-                if "@minerva.kgi.edu" in self.user_email:
+                if "@uni.minerva.edu" in self.user_email:
                     label_warning = Label(top, text="It looks like you may not have entered a session we currently support!\n Would you mind retyping? As a reminder, you wrote {}.\n We currently only support ({})".format(self.sessions_key, ", ".join([*self.sessions])))
                 else:
                     label_warning = Label(top, text="Would you mind checking you entered a minerva address?\n As a reminder, you wrote {}.".format(self.user_email))
