@@ -1,9 +1,21 @@
 # Session 2.2
 
+> In this pre class work, you will be performing two tasks: 
+> 
+> 1. Add a new language support into a existing game (see part 3) 
+> 2. Implement random number generators (see part 4)
+> 
+> Be sure you read through the prompt carefully and understand the expected outcome.
 ### 1. Get started
-To set up a suitable environment for this session's code:
+To set up a suitable [environment variable](https://www.twilio.com/blog/2017/01/how-to-set-environment-variables.html) for this session's code:
+
+**Windows**
 ```bash
-$ python3 blackjack.py
+$ set PYTHONENCODING='utf-8 python3 blackjack.py'
+```
+**MacOS**
+```bash
+$ export PYTHONENCODING='utf-8 python3 blackjack.py'
 ```
 For Windows (python3 -> python, from here on out):
 ```bash
@@ -52,18 +64,32 @@ External Web resources could be found [here](https://inventwithpython.com/blog/2
 Complete the following steps to add support for your language:
 1. Locate the position for pygettext.py and msgfmt.py. For Mac, they are located in your Python3 folder, in examples/Tools/i18n/; For Windows, they are in \Tools\i18n.
 
-A quick way to findout the python3 folder you are using (Mac)
-```bash
-which python3
-```
-For Windows
-```bash
-where python
-```
+    <details>
+    <summary>How to find File Location on <b>Mac</b> (click to expand)</summary>
+
+    You can do this in either way below:
+
+    (1) Using the following command to find python3 folder location:
+      
+      ```bash
+      $ which python3
+      ```
+
+    (2) Use GUI tricks: Drag the finder file to your terminal, then copy paste the path 
+    ![file-location-trick-for-mac](https://media.giphy.com/media/Ud3ljJftswha4M6a7C/giphy.gif)
+
+    </details>
+    For Windows
+
+    ```bash
+    where python
+    ```
+
 2. You have to make sure you are in the right working directory for session_04 (..\cs162\session_04):
 - For a guide on changing directories (Windows) refer to here: https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/ 
 - For mac here: https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html
 - On windows, you must use the command prompt as an administrator: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/ 
+
 
 3. Create a symbolic link to pygettext.py file
 - For windows run the following command:
@@ -81,6 +107,7 @@ To read more about symbolic links see here (you will likely work with them in fu
 ```bash
 > pygettext.py -d blackjack blackjack.py
 ```
+
 
 5. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
 - Open your new .pot file from ...Tools\i18n\blackjack.pot
