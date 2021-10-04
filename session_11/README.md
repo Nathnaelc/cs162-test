@@ -117,20 +117,17 @@ Nearest Place:       Bayswater, London
 ```
 More documentation can be found [here](https://developer.what3words.com/public-api/docs#convert-to-3wa).
 
-### 5. Flying Aircraft
+### 5. Weather from the Meteorologisk Institute
 
-Here is an example link to return all currently-airborne aircraft in JSON format:
-https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json
+Write a short Python program to query the weather for a particular location you care 
+about (eg. where you're currently staying, or your home town).
 
-Write a short Python program which queries the flight tracking API and then
-prints out the country, ICAO code, and altitude:
-
-```text
-Italy : C43240
-Unknown or unassigned country : 6ACDDC : 7652
-Denmark : CF213F : 5979
-Unknown or unassigned country : 6C86E1 : 2936
-Germany : E577B0 : 5600
-```
-
-More documentation of the fields can be found [here](https://www.adsbexchange.com/datafields/).
+The Norwegian Meteorological Institute provides all weather predictions for free.
+See here for some examples:
+https://frost.met.no/examples2.html
+Depending on the requests you are interested in making, you might need to 
+register an account:
+https://frost.met.no/howto.html
+If you're not sure which endpoint is a good one to query, here is a suggestion:
+https://api.met.no/weatherapi/locationforecast/2.0/documentation#!/data/get_complete
+But please feel free to look around and see if there are any more interesting options!
