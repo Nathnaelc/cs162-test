@@ -109,11 +109,11 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     methods = {
-        'TKinter' : TKinter(),
-        'Terminal' : Terminal()
+        'tkinter' : TKinter(),
+        'terminal' : Terminal()
     }
 
     try:
-        methods[vars(args)['UI']].run_main_program()
+        methods[vars(args)['UI'].lower()].run_main_program()
     except KeyError:
         print("Oops, I don't recognize that UI. Want to implement it?")
