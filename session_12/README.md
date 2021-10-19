@@ -16,7 +16,7 @@ used to create a more seamless user experience.
 
 The official Flask tutorial covers setting up a simple microblogging
 application. Work through the application here:
-http://flask.pocoo.org/docs/0.12/tutorial/
+https://flask.palletsprojects.com/en/2.0.x/tutorial/
 
 If you want to compare your results with the final output, have a look here:
 https://github.com/pallets/flask/tree/master/examples/tutorial
