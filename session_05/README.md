@@ -163,7 +163,7 @@ print(t)
 
 ### 1. Identity Access Management - IAM
 It is crucial to get the access control correctly implemented.  As an example,
-consider logging onto ALF.  In this case there are students and professors, each
+consider logging onto Forum.  In this case there are students and professors, each
 of whom is part of multiple courses.  In each course one might have different
 roles - e.g. a professor might be a teacher in one class, while taking another
 class as a student.  Professors are able to do more things on the platform than
@@ -179,8 +179,8 @@ to efficiently determine whether a person is able to perform a particular
 action, such as sending the class to breakout.
 
  (The model sketched out here is more flexible than the actual policy
-implemented in ALF.  As an alternative exercise, try to design how IAM is handled
-in ALF.)
+implemented in Forum.  As an alternative exercise, try to design how IAM is handled
+in Forum.)
 
 ### 2. Bug or feature?
 Notice that a tomato can now also appear inside a fruit salad without any
