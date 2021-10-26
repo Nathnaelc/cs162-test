@@ -7,6 +7,10 @@ For the first few sessions, it is recommended that you run sqlite3 directly
 through the sqlite3 shell.  Search the internet for help to you get this up
 and running for your particular platform.
 
+For Windows 10 users, see here for help: https://www.youtube.com/watch?v=wXEZZ2JT3-k
+
+SQlite comes preinstalled with Mac. If for some reason this is not the case, follow similar steps above.
+
 Once you are able to run commands in the shell then you can begin creating
 tables, inserting data and querying the data.  A good approach is to
 create a single long text file containing all the commands.  Depending on the
@@ -19,6 +23,9 @@ the database to persist then you can tell sqlite to store the database in a file
 ```bash
 $ sqlite3 cs162.db < create.sql
 ```
+Be careful when referring to the same .db file when tables are already created.
+After running once, you can comment out CREATE and INSERT commands
+
 If your platform does not support piping in the commands then you will have to
 do the following:
 ```bash
