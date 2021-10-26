@@ -7,6 +7,10 @@ For the first few sessions, it is recommended that you run sqlite3 directly
 through the sqlite3 shell.  Search the internet for help to you get this up
 and running for your particular platform.
 
+For Windows 10 users, see here for help: https://www.youtube.com/watch?v=wXEZZ2JT3-k
+
+SQlite comes preinstalled with Mac. If for some reason this is not the case, follow similar steps above.
+
 Once you are able to run commands in the shell then you can begin creating
 tables, inserting data and querying the data.  A good approach is to
 create a single long text file containing all the commands.  Depending on the
@@ -19,6 +23,9 @@ the database to persist then you can tell sqlite to store the database in a file
 ```bash
 $ sqlite3 cs162.db < create.sql
 ```
+Be careful when referring to the same .db file when tables are already created.
+After running once, you can comment out CREATE and INSERT commands (or think about other solutions you might want to implement in production)
+
 If your platform does not support piping in the commands then you will have to
 do the following:
 ```bash
@@ -29,6 +36,13 @@ Connected to a transient in-memory database.
 Use ".open FILENAME" to reopen on a persistent database.
 sqlite> .read create.sql
 ```
+## SQLite Cheat Sheet
+
+There are many helpful commands in SQL. To get started, it may be helpful to review these cheat sheets or have them on the side as you're working through problems:
+https://www.sqlitetutorial.net/sqlite-cheat-sheet/
+https://d17h27t6h515a5.cloudfront.net/topher/2016/September/57ed880e_sql-sqlite-commands-cheat-sheet/sql-sqlite-commands-cheat-sheet.pdf
+
+For a more comprehensive general SQL cheat sheet, see "SQL_cheat_sheet.pdf"
 
 ## Foreign Keys in SQLite Database
 Foreign keys are created to enforce relationship between two tables. Generally, a foreign key in child table would be a column that is the primary key of primary table. The syntax to create the foreign key is

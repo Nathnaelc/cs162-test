@@ -2,6 +2,8 @@
 
 Flask is called a microframework because it is lightweight and minimalistic, providing the bare bones of features a simple web application requires. It is able to support basic HTTP requests, connections to databases and a frontend.
 
+Web/app frameworks have largely come to define modern app development, and you will almost certainly run into them again at some point in the future. Try to get a solid grasp of what frameworks accomplish, and why we have them! They might seem complex and overwhelming at first, but they are the glue that makes every part work with each other in a functioning application. They give us a template/roadmap, or backbone if you will, to create dynamic and fun applications in a much more efficient manner.
+
 ## Preclass
 
 1. Work through one of option A, option B, or option C.
@@ -16,7 +18,10 @@ used to create a more seamless user experience.
 
 The official Flask tutorial covers setting up a simple microblogging
 application. Work through the application here:
-http://flask.pocoo.org/docs/0.12/tutorial/
+https://flask.palletsprojects.com/en/2.0.x/tutorial/
+
+Only sections through "Blog Blueprint" are required.
+However, other cool and important sections include "Test Coverage" and "Deploy to Production." It could be helpful to at least skim the central ideas of these sections for when you work "in the real world."
 
 If you want to compare your results with the final output, have a look here:
 https://github.com/pallets/flask/tree/master/examples/tutorial

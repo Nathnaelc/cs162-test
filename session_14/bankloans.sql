@@ -64,7 +64,11 @@ SELECT '3. Find all clients who have more than one loan';
 SELECT '----------------------------------------------------';
 
 SELECT '';
-SELECT "4. Find the total balance outstanding over all loans that aren't in arrears";
+SELECT "4.a Find the total balance outstanding over all loans that aren't in ARREARS";
+SELECT '----------------------------------------------------';
+
+SELECT '';
+SELECT "4.b Does this value look right? If not, how can we fix the error? Implement your proposed solution.";
 SELECT '----------------------------------------------------';
 
 SELECT '';
