@@ -49,9 +49,9 @@ Remember to comment your SQL commands!  Single line comments use a double
 hyphen (`--`), while multi-line comments use `/* ... */`.
 
 ## Questions
-Answer the questions below. Be sure to bring your SQL code to class
-and be ready to share and discuss it.  CoCalc will allow you to upload your
-sql script and run it, so also make sure that it displays the data before
+Answer the questions below. Be sure to commit your SQL code to the PCW repo
+and be ready to share and discuss it.  You will paste your 
+sql script into a forum workbook and run it, so also make sure that it displays the data before
 running any queries on it.
 
 ### Bankloans
