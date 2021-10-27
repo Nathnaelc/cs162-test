@@ -131,3 +131,8 @@ https://frost.met.no/howto.html
 If you're not sure which endpoint is a good one to query, here is a suggestion:
 https://api.met.no/weatherapi/locationforecast/2.0/documentation#!/data/get_complete
 But please feel free to look around and see if there are any more interesting options!
+
+### (Optional) Public APIs
+Browse the following repo:
+https://github.com/public-apis/public-apis
+Find an interesting application, and bring it to class!  (If it works well, it will replace one of the above questions for students to do next semester!)
