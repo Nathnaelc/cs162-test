@@ -63,8 +63,6 @@ sufficient stock in the warehouse.  (If there were a negative amount, then we
 might have to rollback the transaction and order from the suppliers instead.)
 
 Now answer the following:
-1. Add all the primary key and foreign key constraints. (This will probably
-require you to also reorder some of the table declarations.)
 1. Write a transaction for a delivery from the Widge supplier which has just
 arrived at the ABC warehouse and unloaded 99 new Widgets.
 2. Write a transaction for a Customer order of 500 Wodgets which places an order
