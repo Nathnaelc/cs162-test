@@ -1,33 +1,25 @@
 import math
-
-# BIGFACTOR represents the product of all prime factors under 100.  This allows
-# us to do a fast pre-check and immediately eliminate any numbers which are
-# divisible by a small number
-
-BIGFACTOR = 1
-for num in range(1, 101):
-    if BIGFACTOR % num != 0:
-        BIGFACTOR = BIGFACTOR * num
-
-
+from miller_rabin import miller_rabin
+import numpy as np
 def is_prime(x):
     ''' Test whether x is a prime number.'''
-    # Check for all possible prime factors under 100:
-    if x % BIGFACTOR == 0:
-        return False
-    # The fast check failed, now perform exhaustive check.
     max_factor = int(math.sqrt(x))
-    for a in range(101, max_factor, 100):
-        if not (x % a):
+    if x == 2 or x == 3:
+        return True
+    if x % 2 == 0:
+        return False
+    for a in range(3,max_factor+1, 100):
+        if x % a == 0:
             return False
     return True
 
-
 def get_next_prime(x):
-    ''' Find the smallest prime number which is greater than or equal to x.'''
+    ''' Find the smallest prime number which is greater than x.'''
 
     if x % 2 == 0:
         x = x + 1
+    else:
+        x = x + 2
     while not is_prime(x):
         x = x + 2
 

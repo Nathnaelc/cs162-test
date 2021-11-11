@@ -19,13 +19,14 @@ application. The latest bug report was filed by someone using [`application.py`]
 4. Write one (or more) unit tests to ensure that the bugs that you have fixed
 are not reintroduced.
 5. Bring your code to class ready to discuss it.
+6. (Bonus) Refer to is_prime() in prime.py. There is a slight cheat/inaccuracy inserted into the function to speed up its run time. Can you catch it and fix it? You may test with a smaller list of primes found here: https://primes.utm.edu/lists/small/10000.txt 
 
 ### More defensive testing
 Another useful tool in TDD is the notion of code coverage.  
 
 1. Install coverage with `pip3 install coverage`
 2. Run the coverage tool on [`tests.py`](tests.py), and generate the html report.
-(This can be done using the commands `coverage run tests.py` and `coverage html`)
+(This can be done using the commands `coverage run tests.py` then 'coverage report' and `coverage html`)
 3. Using the coverage report, write more tests so that you achieve 100% code
 coverage.  Does this find anymore bugs in the library?
 5. Bring your code to class ready to discuss it.  Be sure to remember which
@@ -74,3 +75,4 @@ library?  Which would you prefer to use for a *really* important cryptographic
 purpose?
 - How do you test a library that is probabilistic in nature?
 - Come and discuss your results with me during office hours!
+- (One such popular primality test, the miller_rabin, is already included for you to test)
