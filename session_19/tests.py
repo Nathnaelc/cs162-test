@@ -13,8 +13,8 @@ class PrimeTests(unittest.TestCase):
         self.assertEqual(prime.get_next_prime(12), 13)
 
     def test_bigger_prime_of_thirteen(self):
-        self.assertEqual(prime.get_next_prime(13), 17)
+        self.assertEqual(prime.get_next_prime(13), 13)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
