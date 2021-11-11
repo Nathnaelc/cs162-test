@@ -14,23 +14,38 @@ application. The latest bug report was filed by someone using [`application.py`]
 
 1. Run `application.py` and reproduce the error (it should be a math domain error).
 2. Examine their code and find the bug.  
-3. Now fix your library such that the application code works correctly (and
-    without any other errors).
+3. Now fix your library such that the library code handles this case in the most appropriate way
 4. Write one (or more) unit tests to ensure that the bugs that you have fixed
 are not reintroduced.
-5. Bring your code to class ready to discuss it.
+5. Bring your suggested fix to class ready to discuss it.
 
 ### More defensive testing
 Another useful tool in TDD is the notion of code coverage.  
 
 1. Install coverage with `pip3 install coverage`
 2. Run the coverage tool on [`tests.py`](tests.py), and generate the html report.
-(This can be done using the commands `coverage run tests.py` and `coverage html`)
+(This can be done using the commands `coverage run tests.py` then `coverage report` and `coverage html`)
 3. Using the coverage report, write more tests so that you achieve 100% code
-coverage.  Does this find anymore bugs in the library?
+  coverage of the `is_prime()` and `get_next_prime()`.
+4. In the process of achieving 100% coverage, did you identify any new bugs?
+  You may test with a smaller list of primes found 
+  [here](https://primes.utm.edu/lists/small/10000.txt).
 5. Bring your code to class ready to discuss it.  Be sure to remember which
 tests you added from the coverage tool and which tests were introduced from the
 original bug report.
+
+### Probabilistic Primes
+In practice the deterministic tests for prime number are too slow.  So as good
+engineers, we have decided to trade correctness for speed.  The latest
+(untested) feature is the `miller_rabin()` primal test.
+
+- Add a few tests to achieve an acceptable level of coverage.
+- How does Miller-Rabin compare with the old library in terms of speed?
+  (Try run it on some really big numbers!)
+- What is the probability of error? Is this a level of error you're comfortable with?
+- Which would you prefer to use for a *very* important cryptographic
+purpose?
+- How do you test a library that is probabilistic in nature?
 
 ### Class project
 For your class project write at least 5 unit tests which test the functionality
@@ -58,19 +73,3 @@ Time the code with and without the optimizations.  Which optimizations give
 noticeable speed improvements?  Rewrite `prime.py` using only optimizations that
 work. Keep the new code as simple as possible.   Which code would you rather
 maintain?
-
-### (Optional) Probabilistic prime tests
-
-In practice the deterministic tests for prime number are too slow.  So as good
-engineers, we have decided to trade correctness for speed.  In the new library
-we will implement a probabilistic test for primality.  
-
-- Find code online for performing a single probabilistic prime test.
-- Decide on a probability of error that you feel comfortable with.
-- Now implement the new library such that you can produce primes with a
-probability of error not less than your acceptable level.
-- What sort of speed is your new library?  How does this compare with the old
-library?  Which would you prefer to use for a *really* important cryptographic
-purpose?
-- How do you test a library that is probabilistic in nature?
-- Come and discuss your results with me during office hours!

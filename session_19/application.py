@@ -6,6 +6,7 @@ import prime
 # keys are symmetric, so if one key is used to encrypt, then the other can be
 # used to decrypt.
 
+#this may take a minute or two to run
 p1 = prime.get_next_prime(np.int64(2**63 - 1))
 p2 = prime.get_next_prime(np.int64(2**62 - 1))
 

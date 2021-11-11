@@ -16,5 +16,5 @@ class PrimeTests(unittest.TestCase):
         self.assertEqual(prime.get_next_prime(13), 13)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
