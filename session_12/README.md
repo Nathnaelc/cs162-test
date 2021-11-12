@@ -11,6 +11,7 @@ in as a poll response, so please have this handy when you come to class. Note
 that this preclass work forms the basis of assignment 2.
 3. Question 3 is optional, but will give you insight into some of the techniques
 used to create a more seamless user experience.
+4. Question 4 is optional but crucial for you. You will have a chance to create more Flask apps by following execellent tutorials. Check it out!
 
 ### 1. Answer following questions as detail as possible
 1. What is Flask and why it is considered as a microframework in your own word?
@@ -85,3 +86,54 @@ Typically this is done in the webpage using JavaScript (or a JavaScript
 framework).  There isn't enough time in this course to adequately cover
 JavaScript, but if you already know some, or are willing to put the effort into
 learning it, then please do so for this unit and/or the final project!
+
+### 4. (Optional) Get your hand dirty!
+Please follow tutorials provided below if you want to have more experience with Flask.
+#### _Option A. Flaskr Microblogging Tutorial:_
+
+The official Flask tutorial covers setting up a simple microblogging
+application. Work through the application here:
+http://flask.pocoo.org/docs/0.12/tutorial/
+
+If you want to compare your results with the final output, have a look here:
+https://github.com/pallets/flask/tree/master/examples/tutorial
+
+
+#### _Option B. A Basic Todo Application:_
+
+Follow the youtube video at: https://www.youtube.com/watch?v=4kD-GRF5VPs
+
+```bash
+pip3 install flask Flask-SQLAlchemy
+```
+
+Once the program is running, then you can visit: http://127.0.0.1:5000/ and see
+everything working!  Try adding new tasks and then marking them as done.
+
+Notice how straightforward it is to use SQLAlchemy with Flask.  It is strongly
+encouraged that you use SQLAlchemy for both your final project and your web
+assignment.
+
+(Optional) Find out how to use checkboxes to mark an item as complete.
+
+#### _Option C. The Simplest Flask Application Ever:_
+
+Build a super-simple Flask application to your liking. Some ideas include:
+
+1. Dice rolling service;
+2. Email generator service;
+3. A service that builds on the pre-class work you did for 9.1, the HTTP Requests class, like:
+	- For instance, a simple maps service that pulls map data from Google Maps API
+	- A service to query for current weather in different cities
+	- A service to query for current cryptocurrency market prices
+	- A service to query times in another time zone
+4. Password generator (although it's bad to generate the passwords server side!)
+
+Your web application should incorporate at least:
+1. One HTTP `GET` request that retrieves something from either a local database or an online service.
+2. One HTTP `POST` request. This will involve creating a form that takes user input (via HTML forms or Flask forms like WTForms).
+3. A simple HTML frontend that has a form and has fields to output the values for your service.
+
+Keep it short and simple!
+
+You should be able to visit your site at: http://127.0.0.1:5000/.
