@@ -13,7 +13,7 @@ that this preclass work forms the basis of assignment 2.
 used to create a more seamless user experience.
 
 ### 1. Answer following questions as detail as possible
-1. What is Flask and why it is considered as a microframework?
+1. What is Flask and why it is considered as a microframework in your own word?
 2. What is the role of the following parts in a Flask app: 
 	- templates
 	- static
