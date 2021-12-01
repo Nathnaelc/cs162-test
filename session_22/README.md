@@ -9,7 +9,7 @@ First we will do this manually, and once this is working we will do this using
 costs and benefits of each approach.
 
 Again, all of these commands are typed into a shell which has changed to the
-`session13_1/web` directory.  There are differences between the the two
+`session_22/web` directory.  There are differences between the the two
 directories.  Make sure to find out what has changed, and why!
 
 ### 1. Do the tutorial
@@ -154,7 +154,7 @@ been successfully deployed. This needs to be in plain text, so a screenshot is
 not appropriate.  Be prepared to explain your answers for the questions below.
 
 ### Q1. What has changed since last session?
-Compare the differences between the session12_1 and session12_2 web directories.
+Compare the differences between the session_21 and session_22 web directories.
 What has changed, and why have those changes been made?  A useful command in
 this case is the `diff` command.  (For those using windows, it is recommended
 that you download the [DiffUtils for Windows](http://gnuwin32.sourceforge.net/packages/diffutils.htm))
