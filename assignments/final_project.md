@@ -24,8 +24,7 @@ of attending meetings.
 
 The final project is introduced early in the course, and students are encouraged
 to start working early as well. It is possible (and even encouraged) that you
-try finish the project early in the semester and free up significant time for
-other courses.
+try finish the project before week 15 and free up time for other courses.
 
 ### Grading:
 Everything will be managed from a github repo, and this will allow the tracking
@@ -94,18 +93,3 @@ the most relevant LOs, even if they do not strictly apply. This is the best way 
 ensure consistency of the weight of the final project for all students. This is the
 approach taken even for students in unspecialized roles who show a slight preference 
 for a specific aspect of the project.
-
-## Focused Outcomes Added
-
-- **#algorithms**: Apply algorithmic thinking strategies to solve problems and 
-effectively implement working code. (C) FA
-- **#breakitdown**: Organize problems into tractable components and design 
-solutions. (H) EA
-- **#cs162-communication**: Ensure that all code, documentation and commit 
-messages are clearly written with explanations where appropriate.
-- **#cs162-abstraction**: Design interfaces (class interfaces, user interfaces, 
-etc.) that are easy to use and hide much of the complexity needed for the 
-implementation.
-- **#cs162-separationofconcerns**: Design systems such that any task is handled by 
-exactly one component and each component handles conceptually similar tasks.
-- **#cs162-testing**: Write comprehensive and meaningful testing code for the system.
