@@ -2,7 +2,7 @@
 
 ## Description
 
-Each section taking this class will find their own project. The first assignment
+Each section taking this class will find their own projects. The first assignment
 focuses on finding suitable projects for you and your fellow students to tackle.
 Eric Ries defines a startup as “a human institution designed to deliver a new
 product or service under conditions of extreme uncertainty”. This suggests that
