@@ -98,7 +98,7 @@ Complete the following steps to add support for your language:
 ```
 - For mac run the following command:
 ```bash
-> sudo ln -s "<PATH TO SESSION 4>/cs162/session_04" "<PATH TO PYTHON3>/examples/Tools/i18n/pygettext.py"
+> sudo ln -s "<PATH TO PYTHON3>/examples/Tools/i18n/pygettext.py" "<PATH TO SESSION 4>/cs162/session_04"
 ```
 If all goes well, you should be able to see the pygettext.py file in session_04.
 To read more about symbolic links see here (you will likely work with them in future): https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/
