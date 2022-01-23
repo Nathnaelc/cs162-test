@@ -95,9 +95,9 @@ class CardDeck(object):
 
     def pop(self, position=None):
         if position == None:
-            return cards.pop()
+            return self.cards.pop()
         else:
-            return cards.pop(position)
+            return self.cards.pop(position)
 
     # Modify the code here for abstraction.
     # ------------------------------------------------------
