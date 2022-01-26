@@ -105,7 +105,7 @@ To read more about symbolic links see here (you will likely work with them in fu
 
 4. Run the following command: (pygettext.py should be in the same folder)
 ```bash
-> pygettext.py -d blackjack blackjack.py
+> python3 pygettext.py -d blackjack blackjack.py
 ```
 
 
