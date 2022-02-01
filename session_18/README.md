@@ -203,21 +203,6 @@ SQLite (this is shown in the recommended tutorial on SQLAlchemy).  How do these
 commands compare with the SQL that you wrote manually?  Identify any
 differences, and find out why SQLAlchemy has done it differently.
 
-### Online retailer
-From the session on transactions:
-1. Rewrite all the `CREATE TABLE` commands for the tables contained in
-`retail.sql` to now use SQLAlchemy. The SQLAlchemy commands should also create
-primary key and foreign key constraints where appropriate.
-2. Rewrite all the `INSERT` commands to now use SQLAlchemy. In particular, you
-should hold all the values in a standard Python container (e.g. list,
-dictionary, or namedtuple), or a combination of Python containers (e.g. list of
-dictionaries).  The insertions should all happen in a single transaction.
-3. Rewrite all your transactions from the exercise to now use SQLAlchemy.
-4. (Optional) Get SQLAlchemy to output the real SQL commands that it sends to
-SQLite (this is shown in the recommended tutorial on SQLAlchemy).  How do these
-commands compare with the SQL that you wrote manually?  Identify any
-differences, and find out why SQLAlchemy has done it differently.
-
 ### (Optional) Unit of Work
 SQLAlchemy uses the unit-of-work design pattern to decide when to send updates to the
 database.  Read up on the unit-of-work design pattern, and then look at the
