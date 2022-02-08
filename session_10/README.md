@@ -21,8 +21,7 @@ material then you can skip any sections as you see fit.
 ## Questions
 
 ### 1. Work through the exercise in debugging HTML
-The final guide in the course involves [debugging some badly written html]
-(https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML).
+The final guide in the course involves [debugging some badly written html](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML).
 
 Work through the tutorial and fix all the bugs you can find.
 
