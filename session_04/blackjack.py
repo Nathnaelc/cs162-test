@@ -99,7 +99,7 @@ class CardDeck(object):
         else:
             return self.cards.pop(position)
 
-    # Modify the code here for abstraction.
+    # TODO: Modify the code here for abstraction.
     # ------------------------------------------------------
     def pop_rand(self, rand_method, x, c, m):
         """This element returns a random card from a given list of cards.
@@ -138,7 +138,7 @@ class CardDeck(object):
             return final_value
 
 
-# Modify the code here for abstraction.
+# TODO: Modify the code here for abstraction.
 # ------------------------------------------------------
 def random_number(x, c, m):
     """Produce a random number using the Park-Miller method.
@@ -173,7 +173,7 @@ def hit_me(args):
 
 def game(args):
 
-    # Modify the code here for abstraction.
+    # TODO: Modify the code here for abstraction.
     # ------------------------------------------------------
     from datetime import datetime
 
