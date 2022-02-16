@@ -9,7 +9,7 @@ class BaseMethod:
                          '11': ['2 - Pokemon',
                                 '3 - Crypto Exchange', 
                                 '4 - What3words',
-                                '5 - Flying Aircraft']}
+                                '5 - Weather']}
         self.user_email = ''
         self.sessions_key = ''
 
