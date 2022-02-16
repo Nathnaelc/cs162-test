@@ -23,7 +23,7 @@ After which you should feel comfortable tackling question 1.
 However, we can also query the web through a python program.  There are many
 ways of making http requests programmatically.  A nice library is the `requests`
 library.  You can install it using:
-```python3
+```bash
 pip3 install requests
 ```
 Now work through [the guide to HTTP requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview).
