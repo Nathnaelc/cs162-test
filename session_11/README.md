@@ -94,7 +94,7 @@ Write a short Python program which queries the Poloniex Exchange API and then
 prints out a list of the latest trading prices in plain text:
 ```text
 BTC_OMNI : 0.00005140
-BTC_ETH : 0.0.10150000
+BTC_ETH : 0.010150000
 BTC_ETC : 0.00296001
 ```
 https://poloniex.com/support/api/
