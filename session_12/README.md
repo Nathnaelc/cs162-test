@@ -69,8 +69,6 @@ Your Kanban application should be able to:
 1. Create a new item in the "To do" state.
 2. Move any item from any state ("To do", "Doing", or "Done") to any other state.
 3. Delete an item when it is done.
-4. Perform some basic styling using a CSS file.  (This is shown in step 8 of the
-   Flaskr tutorial)
 
 ### 3. (Optional) Building a JSON API in Flask
 
