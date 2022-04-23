@@ -23,7 +23,7 @@ After which you should feel comfortable tackling question 1.
 However, we can also query the web through a python program.  There are many
 ways of making http requests programmatically.  A nice library is the `requests`
 library.  You can install it using:
-```python3
+```bash
 pip3 install requests
 ```
 Now work through [the guide to HTTP requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview).
@@ -94,7 +94,7 @@ Write a short Python program which queries the Poloniex Exchange API and then
 prints out a list of the latest trading prices in plain text:
 ```text
 BTC_OMNI : 0.00005140
-BTC_ETH : 0.0.10150000
+BTC_ETH : 0.010150000
 BTC_ETC : 0.00296001
 ```
 https://poloniex.com/support/api/

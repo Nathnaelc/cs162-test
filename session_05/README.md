@@ -141,7 +141,7 @@ class Cooked(Enum):
 
 class Vegetable():
     def __init__(self, name):
-        super.__init__()
+        super().__init__()
         self.name = "Vegetable " + name
         self.cooked = None
         print("Vegetable Initialized")

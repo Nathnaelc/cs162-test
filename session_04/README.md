@@ -96,16 +96,16 @@ Complete the following steps to add support for your language:
 ```bash
 > mklink pygettext.py "C:\<PATH TO PYTHON>\Python38\Tools\i18n\pygettext.py"
 ```
-- For mac run the following command:
+- For mac run the following command (e.g., if you have Python 3.9, your <PATH TO PYTHON3> could be /Library/Frameworks/Python.framework/Versions/3.9/share/doc/python3.9):
 ```bash
-> sudo ln -s "<PATH TO PYTHON3>/examples/Tools/i18n/pygettext.py" "<PATH TO SESSION 4>/cs162/session_04"
+> sudo ln -s "<PATH TO PYTHON3>/examples/Tools/i18n/pygettext.py" "<PATH TO SESSION 4>/pygettext.py"
 ```
 If all goes well, you should be able to see the pygettext.py file in session_04.
 To read more about symbolic links see here (you will likely work with them in future): https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/
 
 4. Run the following command: (pygettext.py should be in the same folder)
 ```bash
-> pygettext.py -d blackjack blackjack.py
+> python3 pygettext.py -d blackjack blackjack.py
 ```
 
 
