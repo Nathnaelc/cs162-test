@@ -42,7 +42,7 @@ Phew! That was quite a long aside.  Let's get back to today's task of getting a 
 
 Run the following code in bash:
 ```bash
-$ LANG=zh_CN python3 blackjack.py
+$ LANG=zh_CN python blackjack.py
 ```
 And the blackjack program is in Chinese.
 
@@ -62,67 +62,36 @@ elif LANGUAGE == 'es':
 External Web resources could be found [here](https://inventwithpython.com/blog/2014/12/20/translate-your-python-3-program-with-the-gettext-module/).
 
 Complete the following steps to add support for your language:
-1. Locate the position for pygettext.py and msgfmt.py. For Mac, they are located in your Python3 folder, in examples/Tools/i18n/; For Windows, they are in \Tools\i18n.
 
-    <details>
-    <summary>How to find File Location on <b>Mac</b> (click to expand)</summary>
-
-    You can do this in either way below:
-
-    (1) Using the following command to find python3 folder location:
-      
-      ```bash
-      $ which python3
-      ```
-
-    (2) Use GUI tricks: Drag the finder file to your terminal, then copy paste the path 
-    ![file-location-trick-for-mac](https://media.giphy.com/media/Ud3ljJftswha4M6a7C/giphy.gif)
-
-    </details>
-    For Windows
-
-    ```bash
-    where python
-    ```
-
-2. You have to make sure you are in the right working directory for session_04 (..\cs162\session_04):
+1. Make sure you are in the right working directory for Session 4, `cs162\session_04`:
 - For a guide on changing directories (Windows) refer to here: https://www.howtogeek.com/659411/how-to-change-directories-in-command-prompt-on-windows-10/ 
-- For mac here: https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html
-- On windows, you must use the command prompt as an administrator: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/ 
+- For Mac here: https://www.macworld.com/article/221277/command-line-navigating-files-folders-mac-terminal.html
+- On Windows, you must use the command prompt as an administrator: https://www.howtogeek.com/194041/how-to-open-the-command-prompt-as-administrator-in-windows-8.1/ 
 
+2. Download pygettext.py to the session_04 directory:
+- The file is part of the Python organization on Github. [You can find the file at this link.](https://raw.githubusercontent.com/python/cpython/main/Tools/i18n/pygettext.py)
+- Download/Save the file to your computer.
+- Move the file to the `session_04` directory located on your computer.
 
-3. Create a symbolic link to pygettext.py file
-- For windows run the following command:
+3. Run the following command: (pygettext.py should be in the same folder)
 ```bash
-> mklink pygettext.py "C:\<PATH TO PYTHON>\Python38\Tools\i18n\pygettext.py"
-```
-- For mac run the following command (e.g., if you have Python 3.9, your <PATH TO PYTHON3> could be /Library/Frameworks/Python.framework/Versions/3.9/share/doc/python3.9):
-```bash
-> sudo ln -s "<PATH TO PYTHON3>/examples/Tools/i18n/pygettext.py" "<PATH TO SESSION 4>/pygettext.py"
-```
-If all goes well, you should be able to see the pygettext.py file in session_04.
-To read more about symbolic links see here (you will likely work with them in future): https://www.howtogeek.com/howto/16226/complete-guide-to-symbolic-links-symlinks-on-windows-or-linux/
-
-4. Run the following command: (pygettext.py should be in the same folder)
-```bash
-> python3 pygettext.py -d blackjack blackjack.py
+> python pygettext.py -d blackjack blackjack.py
 ```
 
-
-5. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
+4. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
 - Open your new .pot file from ...Tools\i18n\blackjack.pot
 - Choose the new language you want to use. Standardized Script-Language codes are here: https://www.softaculous.com/docs/admin/scripts-language-codes/ 
 - You can either translate by manually typing into "translation" or use their auto-generated translations on right panel
 
-6. In pcw directory (under session_04\locale) create a new folder: <YOUR_LANGUAGE_CODE>\LC_MESSAGES
+5. In pcw directory (under session_04\locale) create a new folder: <YOUR_LANGUAGE_CODE>\LC_MESSAGES
 
-7. Save translation in PoEdit to this new sub-sub directory as "blackjack"
+6. Save translation in PoEdit to this new sub-sub directory as "blackjack"
 - PoEdit will handle the extensions
 - This will create a .mo and .po file. Whatever you do DO NOT EDIT THEM DIRECTLY
 - You can also just save as is, and then manually change the name of the .mo file to "blackjack.mo"
 - Your sub-directories should be formatted exactly the same as for zh_CN\LC_MESSAGES
 
-8. In Bash terminal run:
+7. In Bash terminal run:
 
 Windows:
 ```bash
@@ -133,7 +102,7 @@ Mac:
 $ LANG=<your_new_language_code> python3 blackjack.py
 ```
 
-9. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired!
+8. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired!
 
 Think about the following question:
 1. Did you write any code?
