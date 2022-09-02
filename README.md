@@ -4,7 +4,12 @@ Students are free to suggest modifications to this code by cloning, modifying an
 
 Some of these directories will not align with the most recent version of the syllabus.  In all such cases the syllabus should be viewed as the authoritative source of information and you are encouraged to inform your instructor of the discrepancy.
 
-## Spring 2022 support channels:
+## How to submit your pre-class work
+1. [Accept this assignment in GitHub Classroom](https://classroom.github.com/a/4K6vDarz)
+2. You will get a private repository in which you can complete and submit your pre-class work for every class starting from Session 4.
+3. Follow the instructions in the pre-class work assignment README.
+
+## Spring 2022 support channels
 - TA office hours (coming soon)
 - Prof. Scheffler's drop-in office hours, Mondays 12:00–12:45 UTC
 - Prof. Scheffler's bookable 15-minute appointments, Tuesdays 12:00–12:45 UTC. ([Book here](https://bit.ly/SchefflerOH))
@@ -18,7 +23,7 @@ The line between collaboration and plagiarism can be blurry sometimes. Here is a
 * If you're pasting more than 10 lines of code from another student, it's cheating regardless of how well you understand the code — and even if you change the variable names, comments, or other non-functional parts of the code.
 * **When in doubt list all your collaborators and sources!** Then it's not cheating. You might get a lower grade if it seems that you don't understand the code you copied but you won't get sent to the ASC. Surprisingly many students don't heed this advice — and get sent to the ASC.
 
-## Editors:
+## Editors
 It is strongly recommended that you use one of the following editors:
  - [Atom](https://atom.io/)
  - [Sublime Text](https://www.sublimetext.com/)
@@ -30,7 +35,7 @@ However it is essential that your code editor is powerful. It should be possible
 
 The [FAQ](FAQ.md) provides links to short guides on how to install some of the editors and configure them as proper python development environments.
 
-## Code related:
+## Code related
 
 ### Autoformatting
 Please use [black](https://pypi.org/project/black/) to automatically format your code. If everyone uses automatic code formatting then it will save everyone a lot of time when working together. It's the worst when you pull someone else's code, change a single line, hit save, and hundreds of lines of changes occur.
@@ -40,7 +45,7 @@ and think about how standardization is important, and how it helps to avoid
 endless debates about how to best layout code. Then you can move on to writing other
 code with the time that you have saved avoiding those debates.
 
-## Miscellaneous tips:
+## Miscellaneous tips
  - [Your missing semester](https://missing.csail.mit.edu/):
 This is a great resource to provide some high level guidance on better using a wide range of tools. For example, shell scripts, command line tools, git, debugging, and profiling. 
  - [Stuff Everyone Knows Except You](https://www.hackreactor.com/blog/laurie-voss-cto-of-npm-gives-engineering-fundamentals-talk): 
