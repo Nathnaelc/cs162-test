@@ -51,7 +51,7 @@ b.ripen()
 b.peel()
 ```
 By inheriting from Fruit, Banana gets all of the functionality that fruit
-provides, and is able to extend that functionality as well.
+provides, and is able to extend that functionality.
 We also implement the `__repr__` method so that we are able to print human-
 readable representations of our objects.  Python follows a convention that any
 methods or variables which begin with a single underscore (e.g. `_ripe`) are
@@ -62,7 +62,7 @@ underscore (e.g. `__repr__`) are methods that are built into the language.
 Being able to inherit and extend large amounts of functionality
 is a major benefit of object oriented programming, but it must be used with
 care.  In the above example there is already a subtle issue creeping in, before
-a banana is ready to eat it must be peeled.  When b.ripen() is called the
+a banana is ready to eat it must be peeled.  When `b.ripen()` is called the
 method prints that the banana is ready to eat. This is a a violation of the
 Liskov Substitution principle, which states that any subtype *must* be able to
 be substituted for its parent and function correctly in any situation that the
@@ -115,6 +115,7 @@ else:
 
 print(chef.get_fruit_salad())
 ```
+
 Now it is clear that a chef isn't a type of fruit (it doesn't
 inherit from Fruit).  Also there are methods that Fruit has which Chef
 doesn't have (`ready_to_eat`).  This can make it clearer when it is appropriate
@@ -162,25 +163,25 @@ print(t)
 ## Questions:
 
 ### 1. Identity Access Management - IAM
-It is crucial to get the access control correctly implemented.  As an example,
-consider logging onto Forum.  In this case there are students and professors, each
-of whom is part of multiple courses.  In each course one might have different
-roles - e.g. a professor might be a teacher in one class, while taking another
+For web services and various other services, it is crucial to get access control correctly implemented.  As an example,
+consider logging onto Forum.  In this case, there are students and professors, each
+of whom is part of multiple courses.  In each course, one might have different
+roles, for example, a professor might be a teacher in one class while taking another
 class as a student.  Professors are able to do more things on the platform than
-students, e.g. send the class to breakout.  There might be other actions as
-well, for example some students might be privileged with the option of enabling
+students, for example, send the class to breakout.  There might be other actions as
+well, for example, some students might be privileged with the option of enabling
 or disabling student drawing on slides.  When things break (as they sometimes
 do), then it will be really useful to have people with tech support privileges
 come into any class and perform any action.
 
- Design a system which represents all parts of the problem and can flexibly
+Design a system which represents all parts of the problem and can flexibly
 assign students and professors to new classes. The system must also be able
 to efficiently determine whether a person is able to perform a particular
-action, such as sending the class to breakout.
+action, such as sending the class to a breakout.
 
- (The model sketched out here is more flexible than the actual policy
+The model sketched out here is more flexible than the actual policy
 implemented in Forum.  As an alternative exercise, try to design how IAM is handled
-in Forum.)
+in Forum.
 
 ### 2. Bug or feature?
 Notice that a tomato can now also appear inside a fruit salad without any
@@ -188,9 +189,9 @@ errors.  Is this a bug or a feature?  Make arguments for both sides.
 
 
 ### 3. Liskov Substitution principle
- At the REPL, typing `type(x)` will show what type of variable `x` is, while `dir(x)` will reveal all the methods that x has.
+At the REPL, typing `type(x)` will show what type of variable `x` is, while `dir(x)` will reveal all the methods that `x` has.
 
- Work through the simple types (e.g. list, int, float, string) and find out whether it is possible to call the following code with an instance of that type.  Is it possible to find an instance that works, while another instance (of the same type) fails?  
+Work through the simple types (e.g. list, int, float, string) and find out whether it is possible to call the following code with an instance of that type.  Is it possible to find an instance that works, while another instance (of the same type) fails?  
 
 ```python3
 def liskov_substitution_principle(x):
@@ -198,9 +199,9 @@ def liskov_substitution_principle(x):
     x = x * 2
     print(x)
 ```
- Is this a violation of the Liskov substitution principle? Why or why not?
+Is this a violation of the Liskov substitution principle? Why or why not?
 
- [Helpful reading](https://docs.python.org/3.5/library/operator.html)
+[Helpful reading](https://docs.python.org/3.5/library/operator.html)
 
 ### 4. (Optional) Multiple inheritance bug
 There is a subtle bug in the initialization of a tomato.  Identify the bug,
