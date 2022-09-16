@@ -79,7 +79,7 @@ does things incorrectly. This is fine. We are using this example purely as a mea
 of testing your logging library, so we actually want to generate a few warnings and
 errors!
 
-Bring your code to class and be prepared to paste it into a poll answer.
+Bring your code to class and be prepared to paste it into breakout notes.
 
 ### 2. The clock iterator
 
@@ -110,4 +110,4 @@ And the code should produce an infinite loop of output:
 ...
 ```
 
-Bring your code to class and be prepared to paste it into a poll answer.
+Bring your code to class and be prepared to paste it into breakout notes.
