@@ -17,7 +17,15 @@ $ set PYTHONENCODING='utf-8 python3 blackjack.py'
 ```bash
 $ export PYTHONENCODING='utf-8 python3 blackjack.py'
 ```
-For Windows (python3 -> python, from here on out):
+
+**For Windows (python3 -> python, from here on out):**
+
+Mac
+```bash
+$ python3 blackjack.py
+```
+
+Windows
 ```bash
 $ python blackjack.py
 ```
@@ -41,6 +49,13 @@ Phew! That was quite a long aside.  Let's get back to today's task of getting a 
 ### 3. Add support for another language
 
 Run the following code in bash:
+
+Mac
+```bash
+$ LANG=zh_CN python3 blackjack.py
+```
+
+Windows
 ```bash
 $ LANG=zh_CN python blackjack.py
 ```
@@ -74,11 +89,18 @@ Complete the following steps to add support for your language:
 - Move the file to the `session_04` directory located on your computer.
 
 3. Run the following command: (pygettext.py should be in the same folder)
+
+Windows
 ```bash
-> python pygettext.py -d blackjack blackjack.py
+$ python pygettext.py -d blackjack blackjack.py
 ```
 
-4. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
+Mac
+```bash
+$ python3 pygettext.py -d blackjack blackjack.py
+```
+
+1. This will generate a .pot file. Download PoEdit here: https://poedit.net/download
 - Open your new .pot file from ...Tools\i18n\blackjack.pot
 - Choose the new language you want to use. Standardized Script-Language codes are here: https://www.softaculous.com/docs/admin/scripts-language-codes/ 
 - You can either translate by manually typing into "translation" or use their auto-generated translations on right panel
@@ -187,6 +209,15 @@ class RANDU:
       ...
   def sample(self):
     ...
+```
+_HINT 3_: To test your code with Mersenne random method, you can run the command in Terminal:
+Windows:
+```bash
+$ python blackjack.py --rand_method=Mersenne
+```
+Mac:
+```bash
+$ python3 blackjack.py --rand_method=Mersenne
 ```
 
 ### 5. (Optional) Implement more Blackjack rules
