@@ -48,7 +48,7 @@ relevant parts of your code:
 
 These are the recommended commands for macOS:
 ```bash
-python3.6 -m venv venv
+python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 python3 create.py
@@ -57,7 +57,7 @@ python3 query_data.py
 ```
 Recommended commands for Windows:
 ```cmd
-python3.6 -m venv venv
+python3 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 python3 create.py
@@ -78,10 +78,3 @@ files your have submitted. For example:
 .read insert_data.sql
 .read query_data.sql
 ```
-
-## Alternative Assignment
-If your contribution to the final project has involved a significant aspect of
-database programming then you can submit a pdf containing links to pull
-requests where you have used similar techniques and technology as is asked for
-in the above assignment. As always your code should include a significant
-amount of unit tests and be well documented.
