@@ -10,12 +10,12 @@ be in one of three states:
 3. Done
 
 Your assignment is to write a flask application which provides the functionality
-associated with a kanban board. This includes:
+associated with a Kanban board. This includes:
 1. Creating a new task
 2. Moving tasks to different states
 3. Deleting tasks
 
-Please find a few example kanban board websites and use them so that you have a
+Please find a few example Kanban board websites and use them so that you have a
 clear idea of what is needed. (Note that the professional versions look much
 nicer and have many more bells and whistles than are asked for in this
 assignment!)
@@ -25,27 +25,27 @@ that every user has their own account, and can see only their own tasks.  For
 this you will need to create users, and be able to log them in and out.  Each
 task will also need to be associated with a particular user.
 
-### Submission:
+## Submission
 Your primary submission must be a pdf listing of your python code, but you must
 also include a zip file containing all the code and documentation. Your readme
 must include a short description of the structure of the project. Be sure to
 highlight any extra features that you’ve implemented.
 
-### Installation:
+## Installation
 As part of your submission you must include a zip file with all the necessary
 code and html, a requirements.txt file, and a `README.md` file. To get your
 application to run should only require the following steps:
 
-#### macOS
-```python3
+### MacOS
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 python3 app.py
 ```
 
-#### Windows
-```python3
+### Windows
+```bash
 python3 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
@@ -56,10 +56,10 @@ Please make sure that the virtual environment `venv` is **not** included in
 the zip file. (Virtual environments are not portable, and if you installed it 
 on your laptop then it is unlikely to work anywhere else.)
 
-### Testing:
+## Testing
 The project must also include appropriate unit tests. These unit tests should be
 run using the following command (while in the project’s root directory):
 
-```python3
+```bash
 python3 -m unittest discover test
 ```
