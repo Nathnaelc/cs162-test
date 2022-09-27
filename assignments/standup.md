@@ -4,7 +4,7 @@
 
 We have virtual standup meetings every other week where you report your progress during the past two weeks and describe what you want to work on during the next two weeks.
 
-### Guidelines
+## Guidelines
 
 * Be specific. For example, don't write “I worked on the database”; instead write “I created the database tables for storing nutritional information and implemented all the unit tests for the new tables.”
 
@@ -14,7 +14,7 @@ We have virtual standup meetings every other week where you report your progress
 
 * It is okay if you didn't work on any code during a particular 2-week cycle. Some people will write more code that others and that is expected.
 
-### Submission
+## Submission
 
 Submit a PDF with the following very short points.
 
@@ -22,3 +22,7 @@ Submit a PDF with the following very short points.
 2. What you will do during the next 2 weeks.
 3. A list of pull requests or other links that you created.
 4. A list of pull requests that you reviewed.
+
+## Grading
+
+These check-in assignments are not graded, however they do contribute to your #Communication grade on the Final Project assignment.
