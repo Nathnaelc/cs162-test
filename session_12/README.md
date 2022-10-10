@@ -4,7 +4,7 @@ Flask is called a microframework because it is lightweight and minimalistic, pro
 
 Web/app frameworks have largely come to define modern app development, and you will almost certainly run into them again at some point in the future. Try to get a solid grasp of what frameworks accomplish, and why we have them! They might seem complex and overwhelming at first, but they are the glue that makes every part work with each other in a functioning application. They give us a template/roadmap, or backbone if you will, to create dynamic and fun applications in a much more efficient manner.
 
-## Preclass
+## Pre-class
 
 1. Answer all questions in Question 1, which will strengthen your knowledge with Flask.
 2. Question 2 applies what you've learned to creating a kanban board. This must
@@ -27,7 +27,7 @@ productive programmer!
 	- redirect
 	- url_for
 	- session
-3. When we run a flask app, you may need to use the following commands, please explain the goal of each command.
+3. When we run a Flask app, you may need to use the following commands. Explain the goal of each command.
 	```bash
 	$ pip3 install -r requirements.txt
 	```
@@ -46,7 +46,7 @@ productive programmer!
 	```bash
 	python3 app.py
 	```
-	Please explain the differences between two commands, and when would you use each of them.
+	Explain the differences between two commands, and when would you use each of them.
 
 5. Why should we define specific version of libraries in `requirements.txt`? How can you find the version you should use?
 6. What is the role of `@app.route` in defining one endpoint? Why we put that one right before defining the function. What is the default value for `methods`?
@@ -62,15 +62,15 @@ productive programmer!
 
 ### 2. Kanban server
 
-After working through a Flask example and watching the ToDo application being
-built, you should feel comfortable building your own Kanban application.
+After working through a Flask example, you should feel comfortable building your own Kanban application.
 
 Your Kanban application should be able to:
+
 1. Create a new item in the "To do" state.
 2. Move any item from any state ("To do", "Doing", or "Done") to any other state.
 3. Delete an item when it is done.
 
-### 3. (Optional) Building a JSON API in Flask
+### 3. (Optional) Build a JSON API in Flask
 
 It is best practice to separate out your application data from the presentation
 of the data.  Taken to its logical conclusion this leads to a clean separation
@@ -89,15 +89,17 @@ JavaScript, but if you already know some, or are willing to put the effort into
 learning it, then please do so for this unit and/or the final project!
 
 ### 4. (Optional) Get your hands dirty!
-Please follow tutorials provided below if you want to have more experience with Flask.
+
+Follow tutorials provided below if you want to have more experience with Flask.
+
 #### _Option A. Flaskr Microblogging Tutorial:_
 
 The official Flask tutorial covers setting up a simple microblogging
-application. Work through the application here:
-https://flask.palletsprojects.com/en/2.0.x/tutorial/
+application. [Work through the application here.](https://flask.palletsprojects.com/en/2.2.x/tutorial/)
 
-Only sections through "Blog Blueprint" are required.
-However, other cool and important sections include "Test Coverage" and "Deploy to Production." It could be helpful to at least skim the central ideas of these sections for when you work "in the real world."
+Only the sections up to the end of _Blog Blueprint_ are required.
+However, other cool and important sections include _Test Coverage_ and _Deploy to Production_.
+It could be helpful to at least skim the central ideas of these sections for when you work "in the real world."
 
 If you want to compare your results with the final output, have a look here:
 https://github.com/pallets/flask/tree/master/examples/tutorial
@@ -105,7 +107,7 @@ https://github.com/pallets/flask/tree/master/examples/tutorial
 
 #### _Option B. A Basic Todo Application:_
 
-Follow the youtube video at: https://www.youtube.com/watch?v=4kD-GRF5VPs
+Follow [this Youtube video](https://www.youtube.com/watch?v=4kD-GRF5VPs)
 
 ```bash
 pip3 install flask Flask-SQLAlchemy
