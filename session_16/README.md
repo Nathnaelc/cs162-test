@@ -80,32 +80,34 @@ but isn't?
 
 
 ### Stock trading data
-Your company has subscribed to a share trading data feed from the NYSE.  This
-data feed lists all the orders placed and all the sales that occur.  
-Some orders get canceled before they can be filled.  
+Your startup has subscribed to a share trading data feed from the NYSE.  This
+data feed lists all the orders placed and all the sales that occur on the stock exchange.  
+Some orders get canceled before they can be filled.
 
-Each order is either to buy or sell a certain number of shares in a particular
-company.  The order lists which trading desk placed the order, and if the order is
+Each order is either to buy or sell a certain number of shares of a particular
+stock.  The order lists which trading desk placed the order, and if the order is
 filled then the trading desk that filled the order is also listed.
 
-At the beginning of the year, your company also received a snapshot of which
-trading desks owned which stocks for all the companies listed on the NYSE.
-By using the snapshot as a starting point, one can use the successful trades
+At the beginning of the year, your startup also received a snapshot of which
+trading desks owned which stocks for all the stocks listed on the NYSE.
+By using the snapshot as a starting point, you can use the successful trades
 to update your estimate of all the trading desk portfolios.
 
 As an example, if you knew that the Delta Trading desk had 100 shares of XOM,
 and the feed showed another purchase of 100 shares then you knew that Delta
 Trading now had 200 shares.
 
-As part of its corporate strategy, your company monitors everyone's portfolios
+As part of its corporate strategy, your startup monitors everyone's portfolios
 on a daily basis.  It also monitors the number of sell orders and the number
-of buy orders placed by a trading desk every day for every company on the NYSE.
+of buy orders placed by a trading desk every day for every stock on the NYSE.
+The stock portfolio of each trading desk is stored in a summary table at the
+end of each day of trading.
 
-All the orders also get rolled into summary tables for each company.  These
+All the orders also get rolled into summary tables for each stock.  These
 summary tables list the total number of orders placed, the total number of
 orders filled, the total number of shares exchanged, the total number of
 dollars exchanged, the minimum price, and the maximum price. This summary
-is generated on a daily basis for every company.
+is generated on a daily basis for every stock.
 
 A revision of [insert into select](https://www.w3schools.com/sql/sql_insert_into_select.asp) 
 statements may help in creating the summary tables.
@@ -115,12 +117,12 @@ statements may help in creating the summary tables.
 2. Write the `CREATE TABLE` statements to implement your design.
 3. `INSERT` some example data that you have made up.
 4. Now write a transaction that updates the portfolios for both the selling
-company and the buying company.
+trading desk and the buying trading desk.
 5. What would happen if the statements were not wrapped in a transaction, and
 everything went smoothly?  What would happen if the set of updates were
 interrupted halfway through?
 
-(This is not intending to be a very realistic question, but more a question
+(This is not intended to be a very realistic question, but more a question
 around data modeling, and transactions! You are not expected to have a
-lot of financial background so it is fine if make you assumptions about how
+lot of financial background so it is fine if you make assumptions about how
 this scenario works.)
