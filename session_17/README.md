@@ -18,7 +18,7 @@ for row in table1:
 If there are roughly *M* rows in table1, then this will require work roughly
 proportional to *O(M)*.  On the other hand if a index is created then it is
 possible to do a tree traversal on the index to find the correct location.
-If the rows are unique, then the tree traversal will be *O(logM)* work.  For
+If the rows are unique, then the tree traversal will be *O(log M)* work.  For
 a large table, this is a huge difference in efficiency.
 
 ### Joining a table
@@ -42,13 +42,13 @@ do work roughly proportional to *O(MN)*.
 ### Large un-indexed tables
 In `random.sql` there is a slow query which joins three un-indexed tables
 together.  Since this is a nested for loop and the tables are roughly the
-same size then it will take *O(N^3)* time.
+same size then it will take *O(N³)* time.
 
 1. Now figure out how to index the table(s) such that the query is able to run
 much faster.  
 2. Quantify the time taken for each version with the `.timer` command.
 3. Write pseudo code explaining how the fast query is now being implemented.
-4. Give your estimate of the asymptotic scaling behavior in big-Oh notation
+4. Give your estimate of the asymptotic scaling behavior in big-O notation
 for the fast query.
 5. Give the asymptotic scaling behavior for creating an index.
 
@@ -70,8 +70,8 @@ given zip code and then select the women.
 
 1. Give pseudo-code for the case that there are no indexes.
 2. Give pseudo-code for the case that there is an index on Gender.  Roughly how
-much more efficient is this than without any indices? (Assuming that your
-customers are evenly split between men and women.)
+much more efficient is this than without any indices? (Assume your
+customers follow the same gender distribution as the general population.)
 3. Give pseudo-code for the case that there is an index on ZipCode.  Assuming
 that there are roughly 10,000 different zip codes for your customers, how
 much more efficient is this than without any indices?
