@@ -1,12 +1,12 @@
 ## ACID and transactions
 
-As a database grows in complexity there tends to emerge natural constraints as
-part of the data modeling process. Fortunately SQL provide ACID guarantees,
-which can prevent any inconsistencies violating those constraints.  
+As a database grows in complexity there tend to emerge natural constraints as
+part of the data modeling process. Fortunately, SQL provides ACID guarantees,
+which can prevent any inconsistencies that violate those constraints.  
 
 An example
-might be a book exchange database.  Every time two people swap a book then
-there are two updates that need to happen. One new entry in the database
+is a book exchange database.  Every time two people swap a book,
+there are two updates that need to happen. We need one new entry in the database
 showing that book A was given to person 1 from person 2, and another entry
 showing that book B was given to person 2 from person 1.  If these two updates
 are interrupted halfway through then it will look like book A was given with
@@ -16,7 +16,7 @@ balance).
 
 It is far better to make the updates all-or-nothing (atomic).  This means that
 the database is always in a consistent state.  Today's exercises focus on sets
-of instructions that must all succeed, or all fail to ensure that the database
+of instructions that must either all succeed, or all fail to ensure that the database
 is left in a consistent state.
 
 ## Questions
@@ -40,7 +40,7 @@ In `retail.sql` is a possible database design for a large online retail company.
 This company has several warehouses, and each warehouse is filled with
 several thousand products.  Each product can come from one or more
 suppliers, but will only ever be stored in a single warehouse.
-Each warehouse has a single delivery company which handles all the
+Each warehouse has a single delivery company that handles all the
 logistics of delivering to a customer.  Fortunately for us, each
 customer only has a single address.
 
@@ -60,7 +60,7 @@ END TRANSACTION;
 ```
 Notice that at the end we do a select to double check that we still have
 sufficient stock in the warehouse.  (If there were a negative amount, then we
-might have to rollback the transaction and order from the suppliers instead.)
+might have to roll back the transaction and order from the suppliers instead.)
 
 Now answer the following:
 1. Write a transaction for a delivery from the Widge supplier which has just
@@ -82,7 +82,7 @@ but isn't?
 ### Stock trading data
 Your company has subscribed to a share trading data feed from the NYSE.  This
 data feed lists all the orders placed and all the sales that occur.  
-Some orders get cancelled before they can be filled.  
+Some orders get canceled before they can be filled.  
 
 Each order is either to buy or sell a certain number of shares in a particular
 company.  The order lists which trading desk placed the order, and if the order is
@@ -102,7 +102,7 @@ on a daily basis.  It also monitors the number of sell orders and the number
 of buy orders placed by a trading desk every day for every company on the NYSE.
 
 All the orders also get rolled into summary tables for each company.  These
-summary tabes list the total number of orders placed, the total number of
+summary tables list the total number of orders placed, the total number of
 orders filled, the total number of shares exchanged, the total number of
 dollars exchanged, the minimum price, and the maximum price. This summary
 is generated on a daily basis for every company.
@@ -121,4 +121,6 @@ everything went smoothly?  What would happen if the set of updates were
 interrupted halfway through?
 
 (This is not intending to be a very realistic question, but more a question
-around data modeling, and transactions!)
+around data modeling, and transactions! You are not expected to have a
+lot of financial background so it is fine if make you assumptions about how
+this scenario works.)
