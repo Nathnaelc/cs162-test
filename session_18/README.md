@@ -20,7 +20,7 @@ For comparisons with an SQLite3 implementation in Python, compare `SQLAlchemySam
 
 ## SQLAlchemy Tutorial 
 
-Work through the SQLAlchemy tutorial here and then answer the questions at the bottom of the page. 
+Work through the SQLAlchemy tutorial in the readings and then answer the questions at the bottom of the page. 
 
 ### 1. Local Setup 
 
