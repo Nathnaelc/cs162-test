@@ -1,13 +1,12 @@
 ## Software Containers
 
-Today work is a guided exercise through docker.  You are encouraged to poke
-things along the way to better understand what the different commands do (e.g
-what happens if I edit this command?).  All of these commands are typed into a
+Today's work is a guided exercise through Docker.  You are encouraged to poke
+things along the way to better understand what the different commands do (for example,
+what happens if I edit this command?). All of these commands are typed into a
 shell which has changed to the `session12_1/web` directory.
 
-### 1. Install docker
-Start installing docker by following the instructions at:
-https://www.docker.com/community-edition
+### 1. Install Docker
+Installing Docker by following the instructions at https://www.docker.com/get-started/
 
 Docker is reasonably lightweight in terms of how much memory and CPU it will use
 on your laptop, but you are still encouraged to exit docker before coming to
@@ -15,7 +14,7 @@ class!
 
 **On Windows**
 
-Docker Desktop for Windows requires Hyper-V, which is only supported for 64-bit Windows 10 Pro, Enterprise or Education. Windows 10 Home users, as well as users of 32-bit versions and older versions of Windows have to resort to a legacy solution, and use the outdated "Docker Toolbox". See [this link](https://docs.docker.com/toolbox/toolbox_install_windows/).
+Docker Desktop for Windows requires Hyper-V, which is only supported for 64-bit Windows 10 Pro, Enterprise or Education. Windows 10 Home users, as well as users of 32-bit versions and older versions of Windows have to resort to a legacy solution, and use the outdated "Docker Toolbox". See [this link](https://docs.docker.com/desktop/).
 
 ### 2. Do the tutorial
 First work through the 6 part tutorial on docker.  For this session focus on
