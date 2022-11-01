@@ -1,5 +1,5 @@
 ## Security and Authentication
-Webservers often need to serve confidential information securely.  
+Webservers often need to serve confidential information securely.
 There are several things that can be done to help secure users' information.
 For today's session we will focus on securing a simple user/password
 combination, this is known as HTTP basic authentication.
@@ -98,8 +98,6 @@ Come to class with the simple webserver and make sure that your passwords
 are suitably protected.
 You should also have your SQL injection attack code ready and be able to
 explain how and why your attack will work.
-
-You must be able to paste any part of your code into a poll response.
 
 ### 1. Write an SQL injection
 Assume the following table exists:
