@@ -13,9 +13,8 @@ Again, all of these commands are typed into a shell which has changed to the
 directories.  Make sure to find out what has changed, and why!
 
 ### 1. Do the tutorial
-First work through the 6 part tutorial on docker.  For this session focus on
-sessions three, four, and five.  *For this course there is no need to run
-the parts of the tutorial which require multiple virtual machines.*
+First, work through the tutorial on Docker. For this session, focus on parts 5–8 (Persist the DB, Use bind mounts, Multi container apps, Use Docker Compose).
+*For this course there is no need to run the parts of the tutorial which require multiple virtual machines.*
 
 **Reminder: On Windows**
 
