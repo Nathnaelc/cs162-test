@@ -29,7 +29,7 @@ fellow students, and if they don't know ask your instructor.
 
 ### 4. Run an instance:
 ```bash
-docker run --name=simple-cs162-instance -d --expose 5000 -p 5000:5000/tcp simple-cs162-flask
+docker run --name=simple-cs162-instance -d -p 5000:5000/tcp simple-cs162-flask
 ```
 This command will run the container in detached mode, and will connect port 5000
 on your local machine to port 5000 of the container.  You can verify this by
