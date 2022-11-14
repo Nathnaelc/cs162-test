@@ -3,7 +3,7 @@
 Today's work is a guided exercise through Docker.  You are encouraged to poke
 things along the way to better understand what the different commands do (for example,
 what happens if I edit this command?). All of these commands are typed into a
-shell which has changed to the `session12_1/web` directory.
+shell which has changed to the `session_21/web` directory.
 
 ### 1. Install Docker
 Installing Docker by following the instructions at https://www.docker.com/get-started/
@@ -17,8 +17,8 @@ class!
 Docker Desktop for Windows requires Hyper-V, which is only supported for 64-bit Windows 10 Pro, Enterprise or Education. Windows 10 Home users, as well as users of 32-bit versions and older versions of Windows have to resort to a legacy solution, and use the outdated "Docker Toolbox". See [this link](https://docs.docker.com/desktop/).
 
 ### 2. Do the tutorial
-First work through the 6 part tutorial on docker.  For this session focus on
-sessions one and two.
+First work through the 6 part tutorial on docker. For this session focus on
+parts 1–3 (Overview, Containerize an application, Update the application).
 
 ### 3. Build the dockerfile:
 ```bash
