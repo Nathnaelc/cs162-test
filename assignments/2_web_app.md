@@ -61,5 +61,5 @@ The project must also include appropriate unit tests. These unit tests should be
 run using the following command (while in the project’s root directory):
 
 ```bash
-python3 -m unittest discover test
+python3 -m unittest discover
 ```
