@@ -38,9 +38,8 @@ Then you will need to update the yaml file to have the line:
 4. Make sure GitHub Actions are enabled in your repo, then push your changes to GitHub
    and see that the test runs.
 
-5. Bring to class the URL of a successful integration run on GitHub Actions in your
-personal account. This will be an URL of the form:
-`https://github.com/<github_username>/cs162-continuous-integration/actions/runs/<build_number>`
+5. Paste the URL of a successful integration test run on GitHub Actions into the pre-class workbook provided in the class page.
+   This will be an URL of the form: `https://github.com/<github_username>/cs162-continuous-integration/actions/runs/<build_number>`
 
 ## Questions
 
