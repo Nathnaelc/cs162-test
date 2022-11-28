@@ -36,7 +36,7 @@ Then you will need to update the yaml file to have the line:
 ## Questions
 Bring to class the URL of a successful integration run on github actions in your
 personal account.  This will probably be a URL of the form:
-`https://github.com/minerva-schools/cs162-continuous-integration/runs/<build>`
+`https://github.com/<github_username>/cs162-continuous-integration/actions/runs/<build_number>`
 
 ### 1. Read ci.yaml
 Read through the `ci.yaml` file in its entirety, and make sure you understand
