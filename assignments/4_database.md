@@ -69,6 +69,11 @@ Please make sure that the virtual environment `venv` is **not** included in
 the zip file. (Virtual environments are not portable, and if you installed it 
 on your laptop then it is unlikely to work anywhere else.)
 
+Also make sure the Python cache `__pycache__` is **not** included in the zip file.
+This is less important than `venv` but it is still best practice to exclude it
+when distributing your source code. To understand why,
+[read this StackOverflow explanation](https://stackoverflow.com/a/16869074).
+
 #### Execution (SQLite):
 In a `README.md` file you must include a series of commands to read the various
 files your have submitted. For example:
