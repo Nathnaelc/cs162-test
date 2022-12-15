@@ -35,11 +35,3 @@ there is regular and consistent feedback to guide the final project._
  from previous interviews.
  - Your pdf must also be shared with the rest of the group as soon as it’s been 
  written up to ensure that everyone knows and understands the user feedback.
-
-## Focused Outcomes Added
-
-- **#cs162-communication**: Ensure that all code, documentation and commit 
-messages are clearly written with explanations where appropriate.
-- **#cs162-agile**: Follow the agile movement when researching and developing a 
-new product. This involves finding short feedback loops throughout all stages of 
-the product lifecycle (inception, development, and deployment).
