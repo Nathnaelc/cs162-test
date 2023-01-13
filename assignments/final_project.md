@@ -1,7 +1,7 @@
 # Final project
 ## Description
 
-The final project for CS162 consist of groups of roughly 6 students 
+The final project for CS162 comprises groups of roughly 6 students 
 implementing a project chosen from the suggestions given in the first assignment. 
 There is a matching process to ensure that most students are working
 on a project they are interested in.
@@ -14,12 +14,12 @@ If the database requires a lot of complex queries then consider assigning
 one person to focus entirely on writing those queries. Some students are 
 great at design, and it is worthwhile giving them total design freedom!
 
-There alsos need to be a single managerial position within each team.
+There also needs to be a single managerial position within each team.
 The main responsibility of this position is to attend occasional 
 meetings with the professor and to report on progress and roadblocks. The 
 person chosen will usually be the same person who suggested the project,
 but this is not a requirement. It is worth pointing out that the managerial
-position is not a fulltime position, and coding is still expected, on top
+position is not a full time position, and coding is still expected, on top
 of attending meetings.
 
 The final project is introduced early in the course, and students are encouraged
@@ -37,7 +37,7 @@ The demo video will typically be 2–5 minutes long.
 
 ## Grading
 
-The whole project is managed from in GitHub repo, and this allows the tracking
+The whole project is managed from a GitHub repo, and this allows the tracking
 of individual contributions to the project.
 A significant portion of your grade (25%–40%) depends on whether or
 not there is successful collaboration within the project which leads to a useful
