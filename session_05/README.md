@@ -187,22 +187,6 @@ in Forum.
 Notice that a tomato can now also appear inside a fruit salad without any
 errors.  Is this a bug or a feature?  Make arguments for both sides.
 
-
-### 3. Liskov Substitution principle
-At the REPL, typing `type(x)` will show what type of variable `x` is, while `dir(x)` will reveal all the methods that `x` has.
-
-Work through the simple types (e.g. list, int, float, string) and find out whether it is possible to call the following code with an instance of that type.  Is it possible to find an instance that works, while another instance (of the same type) fails?  
-
-```python3
-def liskov_substitution_principle(x):
-    x = x % x
-    x = x * 2
-    print(x)
-```
-Is this a violation of the Liskov substitution principle? Why or why not?
-
-[Helpful reading](https://docs.python.org/3.5/library/operator.html)
-
-### 4. (Optional) Multiple inheritance bug
+### 3. (Optional) Multiple inheritance bug
 There is a subtle bug in the initialization of a tomato.  Identify the bug,
 and then fix the bug!
