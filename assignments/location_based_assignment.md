@@ -4,7 +4,7 @@
 Now that your final project has been defined, you need to communicate
 regularly with the potential users of your system to ensure that a useful
 product is built. For this location-based assignment, you need to find a potential user of
-your system in your city, and conduct an in-depth interview with them.
+your system in your city and conduct an in-depth interview with them.
 
 If this
 is happening early in the development cycle then the point of the interview
@@ -41,7 +41,7 @@ Share the feedback from each interview with the whole team so you can improve yo
   from previous interviews.
 - Clearly provide the details of where and when the user interview was conducted.
 - Clearly explain your conclusions from the user interview. Are there any changes you would recommend making to the design based on the user feedback?
-- Pay attention to the #organization of your report. Put the most important information (the context of the user interview and your conclusions) first and the provide the supporting information. If you have detailed records (like interview notes or transcripts), add those as appendices.
+- Pay attention to the #organization of your report. Put the most important information (the context of the user interview and your conclusions) first and then provide the supporting information. If you have detailed records (like interview notes or transcripts), add those as appendices.
 
 ## Resources
 
