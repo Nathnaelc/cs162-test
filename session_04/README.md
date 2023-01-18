@@ -13,17 +13,17 @@ To set up a suitable [environment variable](https://www.twilio.com/blog/2017/01/
 
 **Windows**
 ```bash
-$ set PYTHONENCODING='utf-8 python3 blackjack.py'
+set PYTHONENCODING='utf-8 python3 blackjack.py'
 ```
 **macOS**
 ```bash
-$ export PYTHONENCODING='utf-8 python3 blackjack.py'
+export PYTHONENCODING='utf-8 python3 blackjack.py'
 ```
 
 Next, run the Blackjack program.
 
 ```bash
-$ python blackjack.py
+python blackjack.py
 ```
 
 You should be able to play a simplified form of Blackjack.
@@ -63,8 +63,14 @@ Now, let's look at an example of good design.
 
 Run the following code in a terminal:
 
+**Windows**
 ```bash
-$ LANG=zh_CN python blackjack.py
+set LANG=zh_CN
+python blackjack.py
+```
+**macOS**
+```bash
+LANG=zh_CN python blackjack.py
 ```
 
 And the Blackjack program is in Chinese!
@@ -105,7 +111,7 @@ Complete the following steps to add support for your language. The steps below a
 3. Run the following command: (pygettext.py should be in the same folder)
 
    ```bash
-   $ python pygettext.py -d blackjack blackjack.py
+   python pygettext.py -d blackjack blackjack.py
    ```
   This will generate a `.pot` file.
 
@@ -126,8 +132,14 @@ Complete the following steps to add support for your language. The steps below a
 
 7. In terminal run:
 
+   **Windows:**
    ```bash
-   $ LANG=<your_new_language_code> python blackjack.py
+   set LANG=<your_new_language_code>
+   python blackjack.py
+   ```
+   **macOS:**
+   ```bash
+   LANG=<your_new_language_code> python blackjack.py
    ```
 
 8. The Blackjack game should now run in the new language you have chosen. Repeat for as many languages as desired!
