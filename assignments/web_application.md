@@ -64,6 +64,7 @@ python3 -m unittest discover
 
 ## Hints and best practices
 
+* If you need an overview of writing a small web application in Flask, here is a nice resource: [[freeCodeCamp.org]. (2019, May 28). Learn Flask for Python — Full Tutorial. Youtube.](https://www.youtube.com/watch?v=Z1RJmh_OqeA)
 * Write a clear README to give an overview of your project, its features, and where the different parts of the code are located.
 * Write detailed code comments. The code comments should explain the intent of the different parts of your code.
 * Make sure your screen recording is shared/viewable by your grader. [Loom](https://loom.com/) is a great tool that runs in your browser and is free for educational (`.edu`) accounts. (You don't have to use Loom if you prefer something else.)
