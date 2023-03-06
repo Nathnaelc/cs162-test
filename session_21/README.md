@@ -79,7 +79,7 @@ document, and bring it to class.
 Does the computation server persist data if it is stopped?  How can you tell?
 
 ### Q3. Environment variables
-Read up on environment variables, and how Python accesses these variables.
+Read up on environment variables, and how Python accesses these variables. A great library for managing envorinment variables for configuration, following the 12-factor app framework, is [`dotenv`](https://github.com/theskumar/python-dotenv).
 
 Change the code such that the configuration information for the
 SQLALCHEMY_DATABASE_URI is given by an environment variable.  What sort of
