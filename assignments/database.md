@@ -24,7 +24,7 @@ However an estate agent can be associated with one or more offices.
 
 Every month the following reports need to be run:
  - Find the top 5 offices with the most sales for that month.
- - Find the top 5 estate agents who have sold the most for the month (include their contact details and their sales details so that it is easy contact them and congratulate them).
+ - Find the top 5 estate agents who have sold the most for the month (include their contact details and their sales details so that it is easy to contact them and congratulate them).
  - Calculate the commission that each estate agent must receive and store the results in a separate table. 
  - For all houses that were sold that month, calculate the average number of days on the market.
  - For all houses that were sold that month, calculate the average selling price
