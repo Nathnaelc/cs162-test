@@ -21,8 +21,8 @@ Optional, but strongly encouraged:
 ## Class 2:
 Required:
 - Sign up for free use of GitHub Copilot
-- Install [Python Black](https://black.readthedocs.io/en/stable/) in your text editor, and ensure that it autoformats whenever you save a python file.
-- Install [flake8](https://flake8.pycqa.org/en/latest/) in your text editor, and ensure that it highlights any code which is not flake8 compliant.
+- Install [Python Black](https://black.readthedocs.io/en/stable/) in your text editor, and ensure that it autoformats whenever you save a python file. [VSCode extension](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+- Install [flake8](https://flake8.pycqa.org/en/latest/) in your text editor, and ensure that it highlights any code which is not flake8 compliant. [VSCode installation](https://courses.cs.washington.edu/courses/cse160/20au/computing/setup.html#setup-linter-flake8)
 
 Optional:
 - Using a chatbot or search, find out about the differences between autoformatting code, and linting code. 
