@@ -14,6 +14,7 @@ Required:
 - Sign up for the [GitHub student developer pack](https://education.github.com/pack)
 - Sign up for a [ChatGPT account](https://chat.openai.com/)
 - Register your github account for this course using the this [form](https://forms.gle/bycmVGgUmMDotEvZA)
+- Join the #cs162_software channel on the [student slack](minerva-university.slack.com)
 
 Optional, but strongly encouraged:
 
