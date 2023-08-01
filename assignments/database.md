@@ -1,38 +1,32 @@
-# Real Estate Head Office
-## Overview
+# Health and Fitness Tracking App
 
-You have been tasked with building a database system for a large franchised real
-estate company. This means that the company has many offices located all over
-the country. Each office is responsible for selling houses in a particular area.
-However an estate agent can be associated with one or more offices.
+In this assignment, you will design a comprehensive database schema and SQL queries for a Health and Fitness Tracking App. The application aims to help users track their health metrics, log workouts, monitor nutrition, record sleep patterns, and offer personalized fitness recommendations. Your task is to propose a detailed SQL data schema and create SQL code to perform various data queries for the application.
 
-## Inserting data
+## Assignment Instructions:
 
-1. Whenever a house is listed then the following things need to happen:
- -  All the relevant details of that house need to be captured, ie. at least: seller details, # of bedrooms, # of bathrooms, listing price, zip code, date of listing, the listing estate agent, and the appropriate office.
-2. Whenever a house is sold then the following things need to happen:
- - The estate agent commission needs to be calculated. This happens on a sliding scale:
-   - For houses sold below $100,000 the commission is 10%
-   - For houses between $100,000 and $200,000 the commission is 7.5%
-   - For houses between $200,000 and $500,000 the commission is 6%
-   - For houses between $500,000 and $1,000,000 the commission is 5%
-   - For houses above $1,000,000 the commission is 4%
- - All appropriate details related to the sale must be captured, ie. at least: buyer details, sale price, date of sale, the selling estate agent.
- - The original listing must be marked as sold.
+### Step 1: Health and Fitness Tracking App Overview
 
-## Querying data
+Provide a detailed description of the Health and Fitness Tracking App. Describe its primary objectives, target audience, and the specific health and fitness metrics it will track, including sleep data. Explain how the app will benefit users in achieving their fitness goals and maintaining a healthy lifestyle.
 
-Every month the following reports need to be run:
- - Find the top 5 offices with the most sales for that month.
- - Find the top 5 estate agents who have sold the most for the month (include their contact details and their sales details so that it is easy to contact them and congratulate them).
- - Calculate the commission that each estate agent must receive and store the results in a separate table. 
- - For all houses that were sold that month, calculate the average number of days on the market.
- - For all houses that were sold that month, calculate the average selling price
+### Step 2: Identify Data Requirements
 
-## Testing
+Identify the key data elements that the app needs to store and manage. This includes user data, workout information, nutrition logs, sleep patterns, and any other relevant health metrics. Discuss the relationships between different data elements and the importance of capturing these data points for the success of the application.
 
-To test your solution you will need to create fictitious data and ensure that
-the correct results are calculated from your SQL code.
+### Step 3: Design the SQL Data Schema
+
+Based on the identified data requirements, design a detailed SQL data schema that accurately represents the structure of the database for the Health and Fitness Tracking App. Include all necessary tables, columns, primary keys, foreign keys, and constraints. Justify your data schema design decisions and explain how it aligns with the application's objectives.
+
+### Step 4: SQL Query Scenarios
+
+Create SQL code to perform various data queries that the Health and Fitness Tracking App may require. Ensure your queries cover a wide range of scenarios to extract valuable insights from the database. Consider scenarios related to workout tracking, nutrition analysis, sleep pattern assessment, user progress monitoring, and personalized recommendations.
+
+### Step 5: Data Population
+
+Generate sample data and populate the database with relevant records to test your SQL queries. Ensure that the data includes various user profiles, workout sessions, nutrition logs, sleep patterns, and health metrics. Use realistic values to simulate real-world usage scenarios of the application.
+
+### Step 6: Query Optimization (Optional - Advanced)
+
+As an optional challenge, explore ways to optimize the SQL queries you have written. Discuss any performance issues you encountered and propose potential solutions to enhance query efficiency.
 
 ## Submission
 
@@ -52,6 +46,7 @@ In a `README.md` file you must include a series of commands to execute all the
 relevant parts of your code:
 
 These are the recommended commands for macOS:
+
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -62,6 +57,7 @@ python3 query_data.py
 ```
 
 Recommended commands for Windows:
+
 ```cmd
 python3 -m venv venv
 venv\Scripts\activate.bat
@@ -71,7 +67,7 @@ python3 insert_data.py
 python3 query_data.py
 ```
 
-#### Execution (SQLite)
+### Execution (SQLite)
 
 In a `README.md` file you must include a series of commands to read the various
 files your have submitted. For example:
@@ -89,6 +85,6 @@ files your have submitted. For example:
 - Use the [Python Faker library](https://faker.readthedocs.io/en/master/) to generate as much random data as you need for your assignment.
 - Write a clear README to summarize your work for this assignment.
 - Explain the intent of your code, database design, and database queries in code comments.
-- Please make sure that the virtual environment `venv` is **not** included in your Zip file. Virtual environments are not portable, and if you installed it 
-on your laptop then it is unlikely to work anywhere else.
+- Please make sure that the virtual environment `venv` is **not** included in your Zip file. Virtual environments are not portable, and if you installed it
+  on your laptop then it is unlikely to work anywhere else.
 - Also, make sure the Python cache `__pycache__` is **not** included in the Zip file. This is less important than `venv` but it is still best practice to exclude it when distributing your source code. To understand why, [read this StackOverflow explanation](https://stackoverflow.com/a/16869074).

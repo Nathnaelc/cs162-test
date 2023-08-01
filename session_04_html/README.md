@@ -7,6 +7,7 @@ understand HTML:
 https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML
 
 It consists of the following guides:
+
 1. Getting started with HTML
 2. Metadata in HTML
 3. HTML text fundamentals
@@ -15,49 +16,37 @@ It consists of the following guides:
 6. Document and website structure
 7. Debugging HTML
 
-Work through the guides at your own pace.  If you are comfortable with the
+Work through the guides at your own pace. If you are comfortable with the
 material then you can skip any sections as you see fit.
+
+(Optional) If you want to mainly work on the frontend design for the final project, then it is recommended
+that you also work through the following guide:
+[HTML and CSS Crash Course Tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G)
+This contains a lot more information about laying things out correctly with CSS.
 
 ## Questions
 
-### 1. Work through the exercise in debugging HTML
-The final guide in the course involves [debugging some badly written html](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML).
+### 1. Examine a modern webpage in Chrome dev tools
 
-Work through the tutorial and fix all the bugs you can find.
+After watching the video on Chrome dev tools, open one of the follow sites in Chrome and use the dev tools to inspect the HTML.
+Pay particular attention to how &lt;div&gt;s are used to lay out the page. Do not pay attention to the CSS.
 
-It is always good practice to submit your HTML to an online validation service
-which can highlight any issues there might be.  Make sure that your final
-solution [validates](https://validator.w3.org/) successfully.
+Site:
 
-Be sure to bring the valid HTML to class and be able to paste it in as a poll
-response.
+- https://forum.minerva.edu/
+- https://www.bbc.com/news
+- https://en.m.wikipedia.org/wiki/Main_Page
+
+Come to class ready to sketch out how divs might structure a page, and why it works that way.
 
 ### 2. Kanban board
 
-A Kanban board is a simple form of task management.  Every task that you add
-can be in one of three states:
+1. Read assignment 2
+2. Start a simple design for the Kanban board. It should include
+   - the Title of the site
+   - an option to logout
+   - the 5 columns of the board
+   - Some example tasks in each column
+   - a footer
 
-1. To do
-2. Doing
-3. Done
-
-Please find a few example Kanban board websites and play around with it so that
-you have a clear idea of the typical layout of a Kanban board.
-
-Now design a simple static html webpage as a mockup of your own Kanban website.
-It is not necessary to include graphics, but could be a nice
-If you want to make your website look beautiful, then you should also read up on
-[CSS styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS).  
-An example of using CSS to create a 3 column layout is given
-[here](https://www.w3schools.com/howto/howto_css_three_columns.asp),
-with an alternative approach gven [here](https://www.w3schools.com/css/css3_multiple_columns.asp).
-
-*For now you do not need to have any forms on your website,, as we will cover
-HTML forms in the next session.*
-
-Make sure that your final solution [validates](https://validator.w3.org/)
-successfully. Be sure to bring screenshots of your final design, along with the
-valid HTML, to class.
-
-(Note that this Kanban board will be developed further in later sessions and
-eventually submitted as an assignment.)
+CSS is something that is not a part of this course, so use tooling to help you with the design. For example, you can use [this tool](https://www.figma.com/) to create a design and then export the CSS. Alternatively you can give the html to a chatbot, and ask for some CSS that will appropriately format the page.
