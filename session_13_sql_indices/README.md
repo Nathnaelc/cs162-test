@@ -1,4 +1,4 @@
-## SQL indices
+# SQL indices
 
 A SQL index allows us to keep track of the rows in a table sorted by a particular
 column. In nearly all cases this dramatically speeds up SQL queries!
@@ -45,30 +45,32 @@ for row1 in table1:
 If table1 has _M_ rows and table2 has _N_ rows, then the database will need to
 do work roughly proportional to _O(MN)_.
 
-### Large un-indexed tables
+# Questions
 
-(Run this exercise through an AI tool and work through the answers.)
+## Large un-indexed tables
+
+**Run this exercise through an AI tool and work through the answers.**
 
 In `random.sql` there is a slow query which joins three un-indexed tables
 together. Since this is a nested for loop and the tables are roughly the
-same size then it will take _O(N³)_ time.
+same size then it will take _O(N³)_ time. In `random_indexed.sql` we add
+a minimal set of indexes to the tables.
+In `random_cover_indexed.sql` we add a covering index to the tables.
 
-1. Now figure out how to index the table(s) such that the query is able to run
-   much faster.
-2. Quantify the time taken for each version with the `.timer` command.
-3. Write pseudo code explaining how the fast query is now being implemented.
-4. Give your estimate of the asymptotic scaling behavior in big-O notation
+1. Run the 3 files, and see how much time each one takes.
+2. Write pseudo code explaining how the fast query is now being implemented.
+3. Give your estimate of the asymptotic scaling behavior in big-O notation
    for the fast query.
-5. Give the asymptotic scaling behavior for creating an index.
+4. Give the asymptotic scaling behavior for creating an index.
 
 (Note that SQLite's query planner is smart enough to create temporary indices
 in this case, and it's still faster than the naive scan. We have to
 explicitly turn off the automatic indexing to better understand what's going
 on.)
 
-### Query optimization and indices
+## Query optimization and indices
 
-(Run this exercise through an AI tool and work through the answers.)
+**Run this exercise through an AI tool and work through the answers.**
 
 Some SQL commands can run much faster if the order of constraints is changed.
 For example, consider:
@@ -93,7 +95,7 @@ given zip code and then select the women.
 5. Find out what a covering index is. What would it look like in this case?
    Is a covering index more or less efficient than a composite index, and why?
 
-## Questions
+## SQL Design
 
 Using AI tools, create SQLite code for the following apps:
 

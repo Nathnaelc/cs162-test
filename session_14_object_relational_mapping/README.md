@@ -1,4 +1,4 @@
-## SQLAlchemy
+# SQLAlchemy
 
 SQLAlchemy is a object-relational-mapper (ORM). This means that it is able
 to map from object-oriented code that you write in Python into SQL commands
@@ -11,7 +11,7 @@ underlying database. It is common for testing code to use a SQLite database,
 while in production the code instead connects to a beefy server that is
 able to satisfy many simultaneous queries coming from many machines.
 
-## SQLAlchemy vs. SQLite3
+# SQLAlchemy vs. SQLite3
 
 Why don't we just use SQLite3 in Python (as seen in `SQLite3Sample.py`)?
 
@@ -19,11 +19,11 @@ Using an ORM like SQLAlchemy allows code to be used unchanged when connecting to
 
 For comparisons with an SQLite3 implementation in Python, compare `SQLAlchemySample.py` and `SQLite3Sample.py`. Check out this [link](http://www.sqlite.org/whentouse.html) to read more about when SQLite works well and when it doesn't.
 
-## SQLAlchemy Tutorial
+# SQLAlchemy Tutorial
 
 Work through the SQLAlchemy tutorial in the readings and then answer the questions at the bottom of the page.
 
-### 1. Local Setup
+## 1. Local Setup
 
 First, install SQLAlchemy in terminal with:
 
@@ -31,15 +31,15 @@ First, install SQLAlchemy in terminal with:
 $ pip install sqlalchemy
 ```
 
-### 2. Setup on a Python Module
+## 2. Setup on a Python Module
 
-#### Import SQLALchemy
+### Import SQLALchemy
 
 ```python
 import sqlalchemy
 ```
 
-#### Create Engine
+### Create Engine
 
 ```python
 from sqlalchemy import create_engine
@@ -63,7 +63,7 @@ engine = create_engine('sqlite:///try_database.db')
 
 Then this creates a local .db file named `try_database.db` (if it doesn't exist already on your path). We will learn how to use SQLAlchemy to open up the .db file and see if there are any new entries. This `database.db` file will persist locally.
 
-#### Connect to engine
+### Connect to engine
 
 Now, connect to the engine interface that you created using the default `connect()` function.
 
@@ -71,7 +71,7 @@ Now, connect to the engine interface that you created using the default `connect
 engine.connect()
 ```
 
-#### Declare a Base
+### Declare a Base
 
 The base maintains a catalogue of classes and tables in the base; each application will usually have one.
 
@@ -82,7 +82,7 @@ Base = declarative_base()
 
 After declaring a base, we will be able to define classes relative to the base. So each class should be created as class `'tablename'(Base)`.
 
-#### Create a Table Mapping
+### Create a Table Mapping
 
 Let's initialise a simple table `Users` by initialising a User class and writing a `__repr__()`method to represent the schema.
 
@@ -110,7 +110,7 @@ class Insurance(Base):
 	users = relationship(User)
 ```
 
-#### Create the Table Schema
+### Create the Table Schema
 
 After defining the schema of the table, we will need to actually create it in our database.
 
@@ -122,7 +122,7 @@ Base.metadata.create_all(engine)
 
 This is very important, as without calling `create_all(engine)` and binding it to the engine, the schema will not be initialised. Your table should now be created, and you will be able to add elements to it.
 
-## Adding Elements to the SQLAlchemy
+## Adding Elements to SQLAlchemy
 
 Create an instance of your `User` class with:
 
@@ -181,22 +181,37 @@ The `__repr__()` method that you defined in your `User(Base)` class will return 
 print(repr(users))
 ```
 
-## Questions
+# Questions
 
 Use the tutorial above as a guide to the following exercises. After reading the tutorial, check out the `SQLAlchemySample.py` file for a working implementation.
 
-### Rewriting previous exercises
+## Rewriting previous exercises
 
-Choose 2 of the 8 exercises from the previous 4 classes, and
-rewrite them to use SQLAlchemy. In particular, you should rewrite the
-following parts of the exercise:
+Choose 1 of these 4 SQL design exercises:
+
+1. Personal Finance Management App
+2. Recipe Recommendation and Meal Planning App
+3. Online Bookstore and Inventory Management
+4. Fitness Class Booking and Attendance Tracking
+
+Choose 1 of these 4 exercises:
+
+1. Online Learning Management System
+2. Patient Health Record and Medical History Tracker
+3. Car Rental and Fleet Management Platform
+4. E-commerce Customer Support Ticketing System
+
+In particular, you should rewrite the following parts of the exercise:
 
 1. The `CREATE TABLE` commands should now use SQLAlchemy. The SQLAlchemy
    commands should also create primary key and foreign key constraints where
    appropriate.
-2. The `INSERT` commands should now use SQLAlchemy. In particular, you should
-   hold all the values in a standard Python container (e.g. list, dictionary, or
-   namedtuple), or a combination of Python containers (e.g. list of dictionaries).
+2. The `INSERT` commands should now use SQLAlchemy.
+3. The `SELECT` commands should now use SQLAlchemy. Make sure that you retrieve
+   only relevant rows, and that you do not retrieve any extra rows. (In the past,
+   some students have retrieved all rows from a table, and then filtered the rows
+   using Python code. This is not acceptable, and will not work in a real-world
+   database with millions of rows.)
 
 ### Expectations
 
@@ -204,7 +219,7 @@ You should use AI tools to write as much of the code for you as possible.
 You should fix any mistakes that the AI tools make, and you should also
 write any code that the AI tools cannot write for you.
 
-## Submission
+### Submission
 
 Be sure to commit your Python code to the PCW repo before you come to class.
 Please make clear which of the exercises you are doing.
@@ -218,7 +233,7 @@ code. Then they will run the Python code, and verify that the results are identi
 for both the SQLAlchemy and SQLite versions. Then they will read the Python code,
 and double check the logic.
 
-### (Optional) Unit of Work
+## (Optional) Unit of Work
 
 SQLAlchemy uses the unit-of-work design pattern to decide when to send updates to the
 database. Read up on the unit-of-work design pattern, and then look at the

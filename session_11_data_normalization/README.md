@@ -25,6 +25,8 @@ Using AI tools, create SQLite code for the following apps:
 2. **Fitness Class Booking and Attendance Tracking**
 
 Make sure you understand what normal form your design corresponds to.
+Be able to give an example of how your design would need to change to
+move to a **lower** normal form.
 
 You can get the tools to write _all_ of the code, but you do need to ensure:
 
