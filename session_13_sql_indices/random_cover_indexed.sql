@@ -35,17 +35,21 @@ INSERT INTO TEST3 (id) WITH TempIDs(id) AS
   (VALUES(1) UNION ALL SELECT id+1 FROM TempIDs WHERE id < 10000 )
   SELECT id FROM TempIDs;
 
+
 -- Now we have 3 large tables with random numbers in them
 SELECT COUNT(*) AS TEST1SIZE FROM TEST1;
 SELECT COUNT(*) AS TEST2SIZE FROM TEST2;
 SELECT COUNT(*) AS TEST3SIZE FROM TEST3;
 
 SELECT * FROM TEST1 LIMIT 10;
-----------------------------------------------------------------
--- OOPS! We forgot to add indexes
-----------------------------------------------------------------
 
-SELECT "SLOW QUERY";
+----------------------------------------------------------------
+-- Add some indexes
+----------------------------------------------------------------
+CREATE INDEX idx_test2_x ON TEST2 (x);
+CREATE INDEX idx_test3_yz ON TEST3 (y,z);
+
+SELECT "COVERING INDEX QUERY";
 ----------------------------------------------------------------
 ----------------------------------------------------------------
 

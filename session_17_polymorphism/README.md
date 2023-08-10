@@ -1,32 +1,34 @@
 ## Polymorphism
 
+### Dunder methods
+
+### Logging handlers
+
+### Abstract Base class
 
 ## Questions:
-In this seminar, *not* all questions need to be answered. Question 1 *must* be
-answered by everyone, but only one of questions 2 and 3 need to be answered.
 
-Find out which question to answer by running
-the following:
+### 1. DIY Class hierarchy
 
-Terminal (mac. Windows use <python>)
-```bash
-python3 utils/pcw_selector.py Terminal
-```
-or
+Using AI tools, create a class hierarchy of your own design. You should have
+at least 6 classes, and at least 2 levels of inheritance. You should have at
+least two polymorphic methods that are overridden in the child classes.
 
-TKinter
-```bash
-python3 utils/pcw_selector.py TKinter
-```
+For example, you can have `Animal` as the base class, `Mammal` and `Bird` as the
+first level of inheritance, and `Dog` and `Cat` as the second level of inheritance.
+You can then have a polymorphic method `speak()` and `act()`.
 
-Once you've entered your email address and session (6), you will find out whether to answer
-question 2 or question 3 for this seminar.
+**Please don't do an animal hierarchy!** I want to see your creativity!
 
-### 1. A base object
+Come to class, with your code ready to paste for the prep poll.
+
+### 2. The Python base `object`
+
 Python provides certain functionality to all classes.
 
-
-At the REPL, typing `type(x)` will show what type of variable `x` is, while `dir(x)` will reveal all the methods that x has.  Investigate the default behavior of t.  Examine the behavior that python gives using the following few lines of code:
+At the REPL, typing `type(x)` will show what type of variable `x` is, while
+`dir(x)` will reveal all the methods that x has. Investigate the default behavior
+of t. Examine the behavior that python gives using the following few lines of code:
 
 ```python
 class BlankClass(object):
@@ -43,21 +45,38 @@ my_attr.x3 = 3
 ```
 
 Now find out about the following methods:
- 1. help(t)
- 2. type(t)
- 3. dir(t)
- 4. hash(t)
- 5. id(t)
- 6. hasattr(my_attr,'x3')
- 7. getattr(my_attr,'x3')
- 8. delattr(my_attr,'x3')
- 9. vars(my_attr)
+
+1.  help(t)
+2.  type(t)
+3.  dir(t)
+4.  hash(t)
+5.  id(t)
+6.  hasattr(my_attr,'x3')
+7.  getattr(my_attr,'x3')
+8.  delattr(my_attr,'x3')
+9.  vars(my_attr)
 10. bool(t)
 
-*Come to class able to give clear explanations of what is going on in each of
-the above methods, and when one might use them.*
+_Come to class able to give clear explanations of what is going on in each of
+the above methods, and when one might use them._
 
-### 2. Logging
+### 3. Dunder methods
+
+Using AI tools create a Python class that implements 5-10 interesting dunder
+methods.
+A good list of dunder methods can be found [here](https://mathspp.com/blog/pydonts/dunder-methods).
+
+Please choose the dunder methods yourself, and make sure that you choose
+methods that you understand. You should be able to explain what each method
+does, and when it is called.
+
+1. Write calling code that shows off the functionality of your dunder methods.
+2. Add docstrings to your class and the dunder methods, and use the `help()`
+   function to show off your documentation.
+3. Bring your code to class and be prepared to paste it into breakout notes.
+
+### 4. Logging
+
 Logging is very useful, and a great example of polymorphism in action.
 
 Read up on the different logging handlers here:
@@ -67,33 +86,8 @@ Look at the source code for the logging module here:
 https://github.com/python/cpython/blob/3.5/Lib/logging/handlers.py
 
 1. Build up a list of all the classes defined in the logging library, and all
-the parent classes that it inherits from.
+   the parent classes that it inherits from.
 2. Now choose a class that inherits from logging.Handler and list all the
-methods that one can call on that handler.
+   methods that one can call on that handler.
 3. Find a simple online tutorial on logging in Python and work your way through
-it.  
-
-*Come to class with your example code and be able to explain both the design
-behind the logging module, and how polymorphism helps build a flexible logging
-library.*
-
-### 3. Graphics in Python
-Most graphics in python is done using the bundled Tkinter package (https://docs.python.org/3.5/library/tkinter.html).  
-
-Look at the source code for Tkinter here:
-https://github.com/python/cpython/blob/3.5/Lib/tkinter/__init__.py
-This is a really long file, so clearly you are not expected to
-read every line.  But being able to identify the major classes from a large
-file is very useful when starting to work on an existing project.
-
-1. Build up a list of all the classes defined in the tkinter library, and all
-the parent classes that it inherits from.
-2. Now choose a class that inherits from widget and list all the methods that
-one can call on that widget.
-3. Find a simple online tutorial on tkinter and build a simple graphical user
-interface.  How much of the complexity of the library can be hidden from an
-enduser?
-
-*Come to class with your example code and be able to explain both the design
-behind the Tkinter library and how polymorphism helps build a flexible graphics
-library.*
+   it.
