@@ -13,7 +13,7 @@ services:
       restart_policy:
         condition: "on-failure"
     ports:
-      - 5000:5000
+      - 5162:5162
     networks:
       - webnet
     volumes:

@@ -1,5 +1,5 @@
-FROM python:3.9.1-alpine3.13
-LABEL maintainer="psterne@minerva.kgi.edu"
+FROM python:3.11.4-alpine3.17
+LABEL maintainer="psterne@minerva.edu"
 
 COPY requirements.txt .
 
@@ -11,8 +11,8 @@ ADD . /app
 
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-# Make port 5000 available to the world outside this container
-EXPOSE 5000
+# Make port 5162 available to the world outside this container
+EXPOSE 5162
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
