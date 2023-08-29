@@ -14,8 +14,9 @@ Submit a PDF with the following sections.
 
 ## Notes
 
-This can be a really short submission. The typical check-in will have about 200 words _in total_, 1 link in the _What you worked on_ section and 1 link in the _What you reviewed_ section. Sometimes, you will have done more work and therefore submit a slightly longer check-in assignment. Keep it simple.
+This can be a really short submission. The typical check-in will have about 200 words _in total_, 1-3 links in the _What you worked on_ section and 1-3 links in the _What you reviewed_ section. Sometimes, you will have done more work and therefore submit a slightly longer check-in assignment. Keep it simple.
 
 ## Grading
 
-These check-in assignments are not graded. However, they do contribute to your #Communication grade on the Final Project assignment.
+- These check-in assignments are not graded. The purpose of these assignments is to ensure that all teams are making progress throughout the semester. 
+- Submitting these assignments late will use up your extensions which would be silly for an assignment that should take no more than 20 minutes.
