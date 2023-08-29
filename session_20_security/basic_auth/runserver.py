@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-from flask import Flask, jsonify, render_template
-from .requires_authorization import requires_authorization
+from flask import Flask, render_template
+from requires_authorization import requires_authorization
 
 app = Flask(__name__)
 
@@ -16,7 +16,7 @@ def get_secret_message():
 @app.route('/api/secret')
 @requires_authorization
 def api_secret():
-    return jsonify({'message': get_secret_message()})
+    return {'message': get_secret_message()}
 
 
 # This is an example HTML endpoint which uses HTTP basic auth
@@ -27,4 +27,5 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    context = ('ssl.cert', 'ssl.key')
+    app.run(host='0.0.0.0', port=5162, ssl_context=context)

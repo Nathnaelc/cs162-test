@@ -1,75 +1,62 @@
 ## Unit testing
+
 Unit testing is a great approach to minimizing bugs in your code.
 
+Coverage is a measure of how much of your code is tested by your unit tests.
+
 There is an approach called Test Driven Development (TDD) which takes this to
-the extreme.  Here you write tests beforehand which describe the expected
+the extreme. Here you write tests beforehand which describe the expected
 behavior of your code.
 
-
 ## Questions
-### The prime bug report
-As the author of a popular library called [`prime.py`](prime.py) you
-occasionally receive bug reports from users who are using your library in their
-application. The latest bug report was filed by someone using [`application.py`](application.py).
 
-1. Run `application.py` and reproduce the error (it should be a math domain error).
-2. Examine their code and find the bug.  
-3. Now fix your library such that the library code handles this case in the most appropriate way
-4. Write one (or more) unit tests to ensure that the bugs that you have fixed
-are not reintroduced.
-5. Bring your suggested fix to class ready to discuss it.
+### 1. Prime library
 
-### More defensive testing
-Another useful tool in TDD is the notion of code coverage.  
+Using AI tools, create a small python module that contains functions for
+determining if a number is prime, and for finding the next prime number.
+Please include a few versions of primality tests (for example a slow,
+deterministic test, and a faster probabilistic test).
 
-1. Install coverage with `pip3 install coverage`
-2. Run the coverage tool on [`tests.py`](tests.py), and generate the html report.
-(This can be done using the commands `coverage run tests.py` then `coverage report` and `coverage html`)
-3. Using the coverage report, write more tests so that you achieve 100% code
-  coverage of the `is_prime()` and `get_next_prime()`.
-4. In the process of achieving 100% coverage, did you identify any new bugs?
-  You may test with a smaller list of primes found 
-  [here](https://primes.utm.edu/lists/small/10000.txt).
-5. Bring your code to class ready to discuss it.  Be sure to remember which
-tests you added from the coverage tool and which tests were introduced from the
-original bug report.
+1. Write unit tests for your library. (You may use either the built-in `unittest`
+   module, or the third-party `pytest` module.)
+2. There are always more defensive tests that you can write! Generate more tests
+   for your library. Cover things like floats, negative numbers, strings, etc.
+   (My rough feeling is that a non-integer float for a primality test should raise
+   an exception, but that a non-integer float for the next prime should be
+   rounded.)
+3. Generate a coverage report for your tests. (You may use either the built-in
+   `coverage` module, or the third-party `pytest-cov` module.)
+4. Bring your code and coverage report to class ready to discuss.
 
-### Probabilistic Primes
-In practice the deterministic tests for prime number are too slow.  So as good
-engineers, we have decided to trade correctness for speed.  The latest
-(untested) feature is the `miller_rabin()` primal test.
+### 2. Flask app
 
-- Add a few tests to achieve an acceptable level of coverage.
-- How does Miller-Rabin compare with the old library in terms of speed?
-  (Try run it on some really big numbers!)
-- What is the probability of error? Is this a level of error you're comfortable with?
-- Which would you prefer to use for a *very* important cryptographic
-purpose?
-- How do you test a library that is probabilistic in nature?
+Using AI tools write a flask app where:
 
-### Class project
-For your class project write at least 5 unit tests which test the functionality
-that you expect to have in any part of the system.  Since these tests will help
-you ensure a working project it is in your own interests not to duplicate tests
-already written by other students.  So you are encouraged here to collaborate
-and maximize your expected coverage. (In some situations there might be limited
-scope for unit tests, so there is no penalty for writing duplicate tests.)
+1. Users can register a new account with an email and password.
+2. Users can log in with an email and password
+3. When logged in, they can submit simple arithmetical expressions and have them
+   evaluated.
+4. These expressions will be saved to the user's history, and will be visible
+   on their dashboard.
+5. Users can log out.
+6. Please avoid use of the potentially unsafe `eval()` function.
+7. Under normal circumstances, it would make sense to use a third-party library
+   like [`safeeval`](https://pypi.org/project/safeeval/), however for pedagogical
+   purposes, please implement your own recursive descent parser for simple mathematical
+   expressions (ie. addition, subtraction, multiplication, division, and exponentiation). (Current AI tools can
+   do this just fine.)
 
-Notice that you don't need to have written any functionality for the class
-project, in order to start writing the unit tests.  Remember to run the tests
-when you do start implementing the functionality.  Seeing a gradual increase in
-the number of tests passing can be very motivating!
+Now write unit tests for:
 
-Bring your unit tests to class and be ready to discuss them.
+1. The login functionality
+2. The logout functionality
+3. The evaluation of simple mathematical expressions
+4. The endpoint for viewing the user's history
 
-### (Optional) Optimization of prime library
+Here are some useful links for writing unit tests for flask apps:
 
-In the library there have been several attempts at optimization.  For example
-the get_next_prime function tests whether the initial x is even and increments
-x if it is.  This allows us to only test the odd numbers (we know that an even
-number is not prime).
+- https://flask.palletsprojects.com/en/2.3.x/testing/
+- https://flask.palletsprojects.com/en/2.3.x/tutorial/tests/
 
-Time the code with and without the optimizations.  Which optimizations give
-noticeable speed improvements?  Rewrite `prime.py` using only optimizations that
-work. Keep the new code as simple as possible.   Which code would you rather
-maintain?
+You are welome to use AI tools for _all_ of the code in this question, but you
+must be able to explain how it works.
