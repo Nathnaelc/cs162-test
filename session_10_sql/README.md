@@ -99,7 +99,7 @@ There are several steps to this process:
 4. Write SQL queries to answer the questions.
 5. Generate a diagram for each schema. Bring this diagram to class to assist you in discussing your design.
 
-### Expectations:
+### Expectations (look at pcw_example):
 
 1. A solution will probably need 4-8 tables in total.
 2. Each table will need 3-20 rows of mock data. (This will depend on the app, and the questions you want to ask of it.)
