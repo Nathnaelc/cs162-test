@@ -41,12 +41,17 @@ Come to class ready to sketch out how divs might structure a page, and why it wo
 
 ### 2. Kanban board
 
-1. Read assignment 2
-2. Start a simple design for the Kanban board. It should include
-   - the Title of the site
-   - an option to logout
-   - the 5 columns of the board
-   - Some example tasks in each column
-   - a footer
+Start a simple design for the Kanban board. It should include
+
+- the Title of the site
+- an option to logout
+- the 5 columns of the board
+- Some example tasks in each column
+- a footer
 
 CSS is something that is not a part of this course, so use tooling to help you with the design. For example, you can use [this tool](https://www.figma.com/) to create a design and then export the CSS. Alternatively you can give the html to a chatbot, and ask for some CSS that will appropriately format the page.
+
+### 3. Web assignment
+
+Please read the [web assignment](../assignments/web_application.md) and come to class with any
+questions that you have.

@@ -29,7 +29,25 @@ You can use the following simplifications to shorten the task:
 
 - There's no need to have users for this site. (As a result, no need for registration/login/logout)
 
-### 3. Javascript questions
+Come to class with your Flask server, and React app running on your laptop.
+You will need to make changes to the code, so your development environment
+should also be open and accessible.
+
+### 3. OpenAPI generator
+
+To prepare for today's class activities, please install the OpenAPI generator:
+
+```
+npm install @openapitools/openapi-generator-cli -g
+```
+
+Confirm that it is successfully installed by running:
+
+```
+openapi-generator-cli version
+```
+
+### 4. Javascript questions
 
 As you work through the React tutorial, you will undoubtably see
 code that confuses you! This is normal. Please keep examples of
