@@ -31,34 +31,35 @@ to hide and show the sub-items of any item.
 ## Installation
 
 As part of your submission you must include a Zip file with all the necessary
-code and HTML, a `requirements.txt` file, and a `README.md` file. To get your
+code and dependencies (eg. `requirements.txt`), and a `README.md` file. To get your
 application to run should only require the following steps:
 
-**macOS:**
+**Flask on macOS:**
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
 python3 app.py
-
-npm install
-npm start
 ```
 
-**Windows:**
+**Flask on Windows:**
 
 ```bash
 python3 -m venv venv
 venv\Scripts\activate.bat
 pip3 install -r requirements.txt
 python3 app.py
+```
 
+**Node.js:**
+
+```bash
 npm install
 npm start
 ```
 
-**Please try to download your assignment and run it before submitting it!**
+**Please download your assignment and run it with the above commands before finalizing it!**
 
 ## Hints and best practices
 
