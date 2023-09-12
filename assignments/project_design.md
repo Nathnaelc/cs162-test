@@ -32,10 +32,6 @@ able to use AI to write the whole assignment (eg. it came up with the idea,
 the experiment, and summarised the results of the experiment), then feel
 free to do so!
 
-Tag and explain your application of appropriate HCs. Since you are running
-an experiment, this is a great opportunity to revisit and apply some of the
-Empirical Analyses HCs.
-
 ## Grading guide:
 
 This assignment will receive 2x scores of #designthinking:
