@@ -15,8 +15,8 @@ applications in a much more efficient manner.
 
 ## Pre-class work
 
-1. Work through thhe tutorial in question 1.
-2. Answer all questions in Question 2, which will strengthen your knowledge with Flask.
+1. Work through thhe tutorial in question 1, and commit your code to your PCW repo.
+2. Answer all questions in Question 2, which will strengthen your knowledge with Flask, and commit the answers to your PCW repo.
 
 ### 1. Flask tutorial
 
@@ -33,7 +33,7 @@ later in the course.
 - Research any code that you don't understand.
 - **Commit the code to your PCW repo before you come to class**
 
-### 2. Answer the following questions with as detail as possible
+### 2. Answer the following questions in a README.md file
 
 1. In your own words, what is Flask and why it is considered as a microframework?
 2. What are the roles of the following parts in a Flask app:
